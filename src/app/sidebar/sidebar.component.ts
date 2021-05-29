@@ -28,10 +28,10 @@ export const ROUTES: RouteInfo[] = [{
         icontype: 'dashboard'
     },{
         path: '/components',
-        title: 'Gérer les utilisateurs',
+        title: 'Gérer les comptes utilisateurs',
         type: 'sub',
-        icontype: 'female',
-        collapse: 'Gérer les utilisateurs',
+        icontype: 'group',
+        collapse: 'dashboard',
         children: [
             {path: 'buttons', title: 'Buttons', ab:'B'},
             {path: 'grid', title: 'Grid System', ab:'GS'},
@@ -43,9 +43,9 @@ export const ROUTES: RouteInfo[] = [{
         ]
     },{
         path: '/forms',
-        title: 'Gérer les donations du sang',
-        type: 'blood',
-        icontype: 'blooddonation',
+        title: 'Gérer les publications du sang',
+        type: 'sub',
+        icontype: 'favorite',
         collapse: 'forms',
         children: [
             {path: 'regular', title: 'Regular Forms', ab:'RF'},
@@ -55,9 +55,9 @@ export const ROUTES: RouteInfo[] = [{
         ]
     },{
         path: '/tables',
-        title: 'Gérer les donations du sang',
+        title: 'Gérer les publications médical',
         type: 'sub',
-        icontype: 'plussquare ',
+        icontype: 'accessible',
         collapse: 'tables',
         children: [
             {path: 'regular', title: 'Regular Tables', ab:'RT'},
@@ -66,9 +66,9 @@ export const ROUTES: RouteInfo[] = [{
         ]
     },{
         path: '/maps',
-        title: 'Gérer les donations de matériels médicales',
+        title: 'Gérer les publications des escortes',
         type: 'sub',
-        icontype: 'place',
+        icontype: 'volunteer_activism',
         collapse: 'maps',
         children: [
             {path: 'google', title: 'Google Maps', ab:'GM'},
@@ -77,24 +77,24 @@ export const ROUTES: RouteInfo[] = [{
         ]
     },{
         path: '/widgets',
-        title: 'Gérer les escortes médicales',
+        title: 'Liste des utilisateurs',
         type: 'link',
-        icontype: 'widgets'
+        icontype: 'list'
 
     },{
         path: '/charts',
-        title: 'Gérer les alertes',
+        title: 'Liste des utilisateurs',
         type: '',
         icontype: 'timeline'
 
     },{
         path: '/calendar',
-        title: 'Liste des utilisateurs',
+        title: 'Liste des publications médicalss',
         type: 'link',
         icontype: 'list'
     },{
         path: '/pages',
-        title: 'Liste des publications',
+        title: 'Liste des publications de sang',
         type: 'sub',
         icontype: 'list',
         collapse: 'pages',
