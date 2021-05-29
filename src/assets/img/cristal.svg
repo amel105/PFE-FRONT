@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="1500"
+   height="1000"
+   id="Flag_of_the_Red_Cross">
+  <defs
+     id="defs10" />
+  <rect
+     width="1500"
+     height="1000"
+     x="0"
+     y="0"
+     style="fill:#ffffff"
+     id="rect3" />
+  <circle
+     cx="1920"
+     cy="1280"
+     r="1070"
+     transform="matrix(0.317757,0,0,0.317757,139.90656,93.27104)"
+     style="fill:#cc0000"
+     id="circle5" />
+  <circle
+     cx="2225"
+     cy="1280"
+     r="860"
+     transform="matrix(0.3255814,0,0,0.3255814,125.58139,83.255808)"
+     style="fill:#ffffff"
+     id="circle7" />
+</svg>

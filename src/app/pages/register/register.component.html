@@ -1,0 +1,98 @@
+
+<div class="wrapper wrapper-full-page">
+  <div class="page-header register-page header-filter" filter-color="red">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 ml-auto mr-auto">
+          <div class="card card-signup">
+            <h2 class="card-title text-center">INSCRIPTION</h2>
+            <div class="card-body">
+              <div class="row-center">
+                  <form class="form" #inscription="ngForm" (ngSubmit)="register(inscription)">
+                    <div class="form-group has-default">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">
+                           
+                            <i class="material-icons">face</i>
+                          </span>
+                        </div>
+                        <input type="text" class="form-control" name ="FirstName" #Name="ngModel" ngModel placeholder="Tapez votre nom...">
+                      </div>
+                
+                  </div> 
+                  
+                     
+                    <div class="form-group has-default">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">
+                            <i class="material-icons">Email</i>
+                          </span>
+                        </div>
+                        <input type="Email" class="form-control"  name ="Email" #Email="ngModel" ngModel placeholder=" Tapez votre email...">
+                      </div>
+                    </div>
+                    <div class="form-group has-default">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">
+                            <i class="material-icons">lock_outline</i>
+                          </span>
+                        </div>
+                        <input type="Password"  name ="Password"  #Password="ngModel"  ngModel placeholder="Tapez votre mot de passe..." class="form-control">
+                      </div>
+                    </div>
+
+                    <div class="form-group has-default">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">
+                            <i class="material-icons">phone</i>
+                          </span>
+                        </div>
+                        <input type="PhoneNumber" name ="PhoneNumber" #PhoneNumber="ngModel" ngModel class="form-control" placeholder=" Tapez votre téléphone...">
+                      </div>
+                    </div>
+                    <mat-checkbox class="form-check">
+                      J'accepte 
+                      <a href="#something">les termes et les conditions</a>.
+                    </mat-checkbox>
+                    <div class="text-center">
+                    
+                      <!-- <button mat-raised-button class="btn btn-success" type="submit">S'inscrire</button> -->
+                      <input type="submit"  mat-raised-button class="btn btn-info" value="S'inscrire">
+                    </div>
+                    <div class="alert alert-success"  *ngIf="success">
+                      <button mat-button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <i class="material-icons">close</i>
+                      </button>
+                      <span>
+                        <b> Success - </b> {{message}}</span>
+                    </div>
+                    <div class="alert alert-danger"  *ngIf="error">
+                      <button mat-button type="button" width="10px" class="close" data-dismiss="alert" aria-label="Close">
+                        <i class="material-icons">close</i>
+                      </button>
+                      <span>
+                        <b> Erreur - </b>{{message}}</span>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer ">
+      <div class="container">
+        
+        <div class="copyright pull-center">
+          &copy;
+        {{test | date: 'yyyy'}}, Be Helpful <i class="material-icons">favorite</i> by
+          <a href="https://www.creative-tim.com" target="_blank">Senda Khelil & Amal Mejri</a> pour un meilleur web.
+        </div>
+      </div>
+    </footer>
+  </div>
