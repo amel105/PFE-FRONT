@@ -128,6 +128,10 @@ export const ROUTES: RouteInfo[] = [{
 })
 
 export class SidebarComponent implements OnInit {
+
+
+
+    
     public menuItems: any[];
     ps: any;
     isMobileMenu() {

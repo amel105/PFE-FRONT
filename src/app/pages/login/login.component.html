@@ -37,7 +37,9 @@
               </div>
               <div class="card-footer justify-content-center">
                 <input type="submit"  mat-raised-button class="btn btn-info" value="Se Connecter"><br/>
-                <div><a href="#pablo">je n'ai pas de compte</a></div>
+                <div> <p class="nav-item-default" routerLinkActive="active">
+                  <a class="nav-link" [routerLink]="['/pages/register']">je n'ai pas de compte</a>
+                </p></div>
               </div>
             </div>
           </form>
@@ -49,8 +51,8 @@
     
         <div class="copyright pull-center">
           &copy;
-            {{test | date: 'yyyy'}}, BE HELPFUL <i class="material-icons">favorite</i> by
-          <a href="https://www.creative-tim.com" target="_blank">Senda Khelil & Amal Mejri</a> for a better web.
+            {{test | date: 'yyyy'}}, BE HELPFUL <i class="material-icons">favorite</i> par
+          <a href="https://www.creative-tim.com" target="_blank">Senda Khelil & Amal Mejri</a>  pour un meilleur web..
         </div>
       </div>
     </footer>

@@ -19,21 +19,22 @@
                             <b class="caret"></b>
                         </span>
                     </a>
-                    
+                    </div>
                     <div class="collapse" id="collapseExample">
                       <ul class="nav">
                           <li class="nav-item">
                               <a [routerLink]="['/dashboard/profile']" class="nav-link">
                                 <i class="material-icons">
                                   portrait
-                                  </i>
+                                  </i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                   <span class="sidebar-normal">Profil</span>
                               </a>
                           </li>
                           <li class="nav-item">
-                              <a href="javascript:void(0)" class="nav-link">
-                                  <span class="sidebar-mini">EP</span>
-                                  <a class="sidebar-normal" (click)="logout()">logout</a>
+                              <a href="javascript:void(0)" class="nav-link"><br>
+                                <i class="material-icons">
+                                  person_off</i>
+                                  <a class="sidebar-normal" (click)="logout()">Déconnexion</a>
                                   <span class="sidebar-normal"></span>
                               </a>
                           </li>
