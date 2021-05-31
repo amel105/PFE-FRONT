@@ -1,6 +1,6 @@
 // IMPORTANT: this is a plugin which requires jQuery for initialisation and data manipulation
 
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import swal from 'sweetalert2';
 import PerfectScrollbar from 'perfect-scrollbar';
 import { HttpClient } from '@angular/common/http';
@@ -13,7 +13,7 @@ declare const $: any;
     templateUrl: 'calendar.component.html'
 })
 
-export class CalendarComponent implements OnInit {
+export class CalendarComponent implements OnInit , AfterViewInit{
     test: Date = new Date();
   succes = false
   error = false
@@ -36,8 +36,24 @@ export class CalendarComponent implements OnInit {
         
       
   }
-    
-    ngOnInit() {
+    ngOnInit(): void {
+        throw new Error('Method not implemented.');
+    }
+  ngAfterViewInit() {
+    $('#datatables').DataTable({
+      "pagingType": "full_numbers",
+      "lengthMenu": [
+        [10, 25, 50, -1],
+        [10, 25, 50, "All"]
+      ],
+      responsive: true,
+      language: {
+        search: "_INPUT_",
+        searchPlaceholder: "Search records",
+      }
+
+    });
+    /*ngOnInit() {
         const $calendar = $('#fullCalendar');
 
         const today = new Date();
@@ -174,4 +190,7 @@ export class CalendarComponent implements OnInit {
             ]
         });
     }
+}
+   */
+}
 }
