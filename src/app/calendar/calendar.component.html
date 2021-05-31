@@ -11,16 +11,21 @@
                     <table class="table">
                             <thead>
                                 <tr>
+                                
+                  <th class="text-center">Id:</th>
                   <th class="text-center">Nom:</th>
                   <th class="text-center">Email :</th>
                   <th class="text-center">Téléphone :</th>
                   <th class="text-center">Mot de passe :</th>
+                  <th class="text-center">Etat:</th>
                 </tr>
                 </thead>
                 <tbody>
               <tr *ngFor="let user of users">
              
-                      
+                <td class="text-center">
+                  {{user.id}}
+                </td>
                            
                             <td class="text-center">
                               {{user.First_Name}}
