@@ -27,7 +27,7 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
 @Component({
     selector: 'app-wizard-cmp',
     templateUrl: 'wizard.component.html',
-    styleUrls: ['wizard.component.css']
+  
 })
 
 export class WizardComponent implements OnInit, OnChanges, AfterViewInit {
@@ -36,6 +36,7 @@ export class WizardComponent implements OnInit, OnChanges, AfterViewInit {
         firstName :String,
         lastName:String,
         email:String
+    
 
     }
   cities = [

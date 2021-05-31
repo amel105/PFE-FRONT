@@ -9,15 +9,15 @@
               <!--        You can switch " data-color="primary" "  with one of the next bright colors: "green", "orange", "red", "blue"       -->
               <div class="card-header text-center">
                 <h3 class="card-title">
-                  Build Your Profile
+                  Modifier votre Profil
                 </h3>
-                <h5 class="card-description">This information will let us know more about you.</h5>
+             
               </div>
               <div class="wizard-navigation">
                 <ul class="nav nav-pills">
                   <li class="nav-item">
                     <a class="nav-link active" href="#about" data-toggle="tab" role="tab">
-                      About
+                     A propos
                     </a>
                   </li>         
                   <li class="nav-item">
@@ -31,7 +31,7 @@
               <div class="card-body">
                 <div class="tab-content">
                   <div class="tab-pane active" id="about">
-                    <h5 class="info-text"> Let's start with the basic information (with validation)</h5>
+                  
                     <div class="row justify-content-center">
                       <div class="col-sm-4">
                         <div class="picture-container">
@@ -40,7 +40,7 @@
                             <input type="file" id="wizard-picture" name="picture"
                             #picture="ngModel" ngModel >
                           </div>
-                          <h6 class="description">Choose Picture</h6>
+                          <h6 class="description">Choisir Photo</h6>
                         </div>
                       </div>
                       <div class="col-sm-6">
@@ -56,7 +56,7 @@
                             matInput
                             id="text"
                             [(value)]=user.firstName
-                            placeholder="First Name"
+                            placeholder="Prénom"
                             >
                           </mat-form-field>
                         </div>
@@ -72,7 +72,7 @@
 
                             matInput
                             id="text"
-                            placeholder="last Name"
+                            placeholder="Nom"
                             >
                           </mat-form-field>
                         </div>
@@ -104,7 +104,7 @@
                             </span>
                           </div>
                           <mat-form-field class="example-full-width">
-                             <input matInput placeholder="phone " 
+                             <input matInput placeholder="Téléphone" 
                                type="text" id="PhoneNumber" 
                      name="PhoneNumber" #phone="ngModel" ngModel    [(value)]=user.PhoneNumber
 
@@ -167,7 +167,7 @@
                           <input matInput type="text" name="ecole" 
                           
                                #ecole="ngModel" ngModel 
-                          placeholder="University">
+                          placeholder="Université">
                         </mat-form-field>
                       </div>
                       <div class="col-sm-3">
@@ -208,7 +208,7 @@
                   <div class="tab-pane" id="experince">
                     <div class="row justify-content-center">
                       <div class="col-sm-12">
-                        <h5 class="info-text"> Experience </h5>
+                       
                       </div>
                       <div class="col-sm-7">
                         <mat-form-field class="example-full-width">
@@ -217,7 +217,7 @@
                           name="titreExperience"
                                #titreExperience="ngModel" ngModel 
                           
-                          placeholder="titre">
+                          placeholder="Titre">
                         </mat-form-field>
                       </div>
                       <div class="col-sm-3">
@@ -225,15 +225,16 @@
                           <input matInput type="text"
                           name="descExp"
                                #descExp="ngModel" ngModel 
-                          placeholder="description">
+                          placeholder="Description">
                         </mat-form-field>
                       </div>
                       <div class="col-sm-5">
                         <mat-form-field class="example-full-width">
+                         
                           <input matInput type="text"
                           name="company"
                                #company="ngModel" ngModel 
-                          placeholder="company">
+                          placeholder="Entreprise">
                         </mat-form-field>
                       </div>
 
@@ -251,11 +252,11 @@
               </div>
               <div class="card-footer">
                 <div class="mr-auto">
-                  <input type="button" class="btn btn-previous btn-fill btn-default btn-wd disabled" name="previous" value="Previous">
+                  <input type="button" class="btn btn-previous btn-fill btn-default btn-wd disabled" name="précéndent" value="Précédent">
                 </div>
                 <div class="ml-auto">
-                  <input type="button" class="btn btn-next btn-fill btn-rose btn-wd" name="next" value="Next">
-                  <input type="submit"  class="btn btn-finish btn-fill btn-rose btn-wd" name="finish" value="Finish" style="display: none;">
+                  <input type="button" class="btn btn-next btn-fill btn-rose btn-wd" name="suivant" value="suivant">
+                  <input type="submit"  class="btn btn-finish btn-fill btn-rose btn-wd" name="terminer" value="Terminer" style="display: none;">
                 </div>
                 <div class="clearfix"></div>
               </div>

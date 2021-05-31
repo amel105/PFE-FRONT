@@ -6,22 +6,39 @@
           <div class="card card-signup">
             <h2 class="card-title text-center">Liste des Utilisateurs</h2>
             <div class="card-body">
-              <div class="row" *ngFor="let user of users">
+              <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table">
+                            <thead>
+                                <tr>
+                  <th class="text-center">Nom:</th>
+                  <th class="text-center">Email :</th>
+                  <th class="text-center">Téléphone :</th>
+                  <th class="text-center">Mot de passe :</th>
+                </tr>
+                </thead>
+                <tbody>
+              <tr *ngFor="let user of users">
              
-                  <div class="card" style="width: 18rem;">
-                      <img class="card-img-top" src="..." alt="Card image cap">
-                      <div class="card-body">
-                        <h5 class="card-title">{{user.First_Name}} {{user.Last_Name}}</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                      </div>
-                    </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-  </div>
-</div>
+                      
+                           
+                            <td class="text-center">
+                              {{user.First_Name}}
+                            </td>
+                            <td class="text-center">
+                              {{user.Email}}
+                            </td>
+                        
+                          
+                            <td class="text-center">
+                              {{user.Phone_Number}}
+                            </td>
+                            <td class="text-center" style="color: blue;">
+                              {{user.Password}}
+                            </td>
+                           
+                      </tr>
+                      </tbody>
+                    </table>
+                    </div></div>
+   </div></div></div></div></div></div></div>
