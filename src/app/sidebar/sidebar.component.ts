@@ -1,5 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import PerfectScrollbar from 'perfect-scrollbar';
+import { environment } from 'src/environments/environment';
 
 declare const $: any;
 
@@ -76,7 +78,7 @@ export const ROUTES: RouteInfo[] = [{
             {path: 'vector', title: 'Vector Map', ab:'VM'}
         ]
     },{
-        path: '/widgets',
+        path: '/calendar',
         title: 'Liste des utilisateurs',
         type: 'link',
         icontype: 'list'
@@ -88,7 +90,7 @@ export const ROUTES: RouteInfo[] = [{
         icontype: 'timeline'
 
     },{
-        path: '/calendar',
+        path: '/widgets',
         title: 'Liste des publications médicalss',
         type: 'link',
         icontype: 'list'
@@ -130,7 +132,19 @@ export const ROUTES: RouteInfo[] = [{
 export class SidebarComponent implements OnInit {
 
 
-
+    test: Date = new Date();
+  succes = false
+  error = false
+  message = ""
+  user :string 
+  constructor(
+    private http: HttpClient
+    ) { 
+       //
+       
+       this.user = localStorage.getItem('username')
+       // alert(this.user)
+      }
     
     public menuItems: any[];
     ps: any;

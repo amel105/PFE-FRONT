@@ -59,8 +59,11 @@ export class LoginComponent implements OnInit {
                // console.log(resultat.token);
                 localStorage.setItem('token',resultat.token)
                 localStorage.setItem('Email',loginForm.form.value.username)
+                localStorage.setItem('userId',resultat.user.id)
+                localStorage.setItem('username',resultat.user.firstName + " "+ resultat.user.lastName )
 
-
+                    console.log(resultat);
+                    
                 location.reload();
 
                 },
