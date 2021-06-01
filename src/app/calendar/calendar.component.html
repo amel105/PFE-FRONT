@@ -18,7 +18,8 @@
                             <thead>
                                 <tr>  
                   <th class="text-center">Id</th>
-                  <th class="text-center">Nom</th>
+                  <th class="text-center">Prénom</th>
+                  <th class="text-center">Nom de Famille</th>
                   <th class="text-center">Email</th>
                   <th class="text-center">Téléphone</th>             
                   <th class="text-center">Etat</th>
@@ -28,12 +29,14 @@
               <tr *ngFor="let user of users">
              
                 <td class="text-center" style="font-weight: bold;">
-                  {{user.id}}
-                </td>
-                           
+                  {{user.id}}               
                             <td class="text-center">
                               {{user.First_Name}}
                             </td>
+                          </td>
+                          <td class="text-center">
+                            {{user.Last_Name}}
+                          </td>
                             <td class="text-center">
                               {{user.Email}}
                             </td>
