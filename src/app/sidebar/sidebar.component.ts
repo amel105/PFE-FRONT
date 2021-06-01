@@ -136,21 +136,15 @@ export class SidebarComponent implements OnInit {
   succes = false
   error = false
   message = ""
-  users :any[]
+  user :string 
   constructor(
     private http: HttpClient
     ) { 
-      this.http.get(environment.connection+'getusers').subscribe(
-        
-
-          (data : any) => {
-              console.log(data);
-              this.users = data
-                    
-          },
-          (error) => {
-         
-          })}
+       //
+       
+       this.user = localStorage.getItem('username')
+       // alert(this.user)
+      }
     
     public menuItems: any[];
     ps: any;

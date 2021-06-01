@@ -2,7 +2,7 @@
   <div class="container">
     <div class="navbar-wrapper">
       <a class="navbar-brand d-none d-sm-none d-md-block" [routerLink]="['/dashboard']">  <img src="/assets/img/need.png" width="100 px"> </a>
-     
+  
     </div>
     <button mat-button class="navbar-toggler" type="button" (click)="sidebarToggle()">
       <span class="sr-only">Toggle navigation</span>
@@ -25,12 +25,7 @@
           <a class="nav-link" [routerLink]="['/pages/login']">
             <i class="material-icons">fingerprint</i> Connexion
           </a>
-        </li>
-        <li class="nav-item" routerLinkActive="active">
-          <a class="nav-link" [routerLink]="['/pages/lock']">
-            <i class="material-icons">lock_open</i> Déconnexion
-          </a>
-        </li>
+        </li> 
       </ul>
     </div>
   </div>
