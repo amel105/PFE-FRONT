@@ -15,6 +15,7 @@ export class LoginComponent implements OnInit {
     private toggleButton: any;
     private sidebarVisible: boolean;
     private nativeElement: Node;
+    error: boolean;
 
     constructor(private element: ElementRef,private http: HttpClient
         ) {
@@ -64,7 +65,8 @@ export class LoginComponent implements OnInit {
 
                 },
                 (error) => {
-                    console.log(error);
+                    this.error = true
+               //console.log(error);
                     
                 })
     }
