@@ -76,7 +76,7 @@ export const ROUTES: RouteInfo[] = [{
             {path: 'vector', title: 'Vector Map', ab:'VM'}
         ]
     },{
-        path: '/widgets',
+        path: '/calendar',
         title: 'Liste des utilisateurs',
         type: 'link',
         icontype: 'list'
@@ -88,7 +88,7 @@ export const ROUTES: RouteInfo[] = [{
         icontype: 'timeline'
 
     },{
-        path: '/calendar',
+        path: '/widgets',
         title: 'Liste des publications médicalss',
         type: 'link',
         icontype: 'list'
