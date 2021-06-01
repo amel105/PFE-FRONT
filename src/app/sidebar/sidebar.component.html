@@ -14,8 +14,10 @@
                 </div>
                 <div class="user-info">
                     <a data-toggle="collapse" href="#collapseExample" class="collapsed">
-                        <span>
-                            Administrateur
+                        <span *ngFor="let user of users" style="font-weight: bold;font-family:Monotype Corsiva;font-size: 30px;">
+                           
+                       
+                      {{user.First_Name}}
                             <b class="caret"></b>
                         </span>
                     </a>

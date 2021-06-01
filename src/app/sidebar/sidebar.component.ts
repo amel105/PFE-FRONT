@@ -1,5 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import PerfectScrollbar from 'perfect-scrollbar';
+import { environment } from 'src/environments/environment';
 
 declare const $: any;
 
@@ -130,7 +132,25 @@ export const ROUTES: RouteInfo[] = [{
 export class SidebarComponent implements OnInit {
 
 
+    test: Date = new Date();
+  succes = false
+  error = false
+  message = ""
+  users :any[]
+  constructor(
+    private http: HttpClient
+    ) { 
+      this.http.get(environment.connection+'getusers').subscribe(
+        
 
+          (data : any) => {
+              console.log(data);
+              this.users = data
+                    
+          },
+          (error) => {
+         
+          })}
     
     public menuItems: any[];
     ps: any;
