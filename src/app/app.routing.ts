@@ -23,6 +23,10 @@ export const AppRoutes: Routes = [
     }, {
         path: 'components',
         loadChildren: './components/components.module#ComponentsModule'
+    },
+    {
+        path: 'gestioncompte',
+        loadChildren: './gestioncompte/gestioncompte.module#GestioncompteModule'
     }, {
         path: 'forms',
         loadChildren: './forms/forms.module#Forms'
@@ -41,7 +45,19 @@ export const AppRoutes: Routes = [
     }, {
         path: 'calendar',
         loadChildren: './calendar/calendar.module#CalendarModule'
-    }, {
+    }, 
+    {
+        path: 'pubescor',
+        loadChildren: './pubescor/pubescor.module#PubescorModule'
+    }, 
+    {
+        path: 'pubsang',
+        loadChildren: './pubsang/pubsang.module#PubsangModule'
+    },
+    {
+        path: 'accueil',
+        loadChildren: './accueil/accueil.module#AccueilModule'
+    },{
         path: '',
         loadChildren: './userpage/user.module#UserModule'
     }, {

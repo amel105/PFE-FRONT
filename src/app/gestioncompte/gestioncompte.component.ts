@@ -1,13 +1,16 @@
+import { AfterViewInit, Component, OnInit } from '@angular/core';
+import swal from 'sweetalert2';
+import PerfectScrollbar from 'perfect-scrollbar';
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment';
 
+
 @Component({
-  selector: 'app-accueil',
-  templateUrl: './accueil.component.html',
-  
+  selector: 'app-gestioncompte',
+  templateUrl: './gestioncompte.component.html',
+
 })
-export class AccueilComponent implements OnInit {
+export class GestioncompteComponent implements OnInit {
   test: Date = new Date();
   succes = false
   error = false
@@ -27,10 +30,10 @@ export class AccueilComponent implements OnInit {
           (error) => {
          
           })
-
-
-
-}  ngOnInit(): void {
+        
+      
+  }
+  ngOnInit(): void {
     throw new Error('Method not implemented.');
   }
 
