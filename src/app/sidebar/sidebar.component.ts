@@ -29,11 +29,11 @@ export const ROUTES: RouteInfo[] = [{
         type: 'link',
         icontype: 'dashboard'
     },{
-        path: '/components',
+        path: '/gestioncompte',
         title: 'Gérer les comptes utilisateurs',
-        type: 'sub',
+        type: 'link',
         icontype: 'group',
-        collapse: 'dashboard',
+       /* collapse: 'dashboard',
         children: [
             {path: 'buttons', title: 'Buttons', ab:'B'},
             {path: 'grid', title: 'Grid System', ab:'GS'},
@@ -42,7 +42,7 @@ export const ROUTES: RouteInfo[] = [{
             {path: 'notifications', title: 'Notifications', ab:'N'},
             {path: 'icons', title: 'Icons', ab:'I'},
             {path: 'typography', title: 'Typography', ab:'T'}
-        ]
+        ]*/
     },{
         path: '/forms',
         title: 'Gérer les publications du sang',
@@ -90,16 +90,16 @@ export const ROUTES: RouteInfo[] = [{
         icontype: 'timeline'
 
     },{
-        path: '/widgets',
-        title: 'Liste des publications médicalss',
+        path: '/accueil',
+        title: 'Liste des publications médicals',
         type: 'link',
         icontype: 'list'
     },{
-        path: '/pages',
+        path: '/pubsang',
         title: 'Liste des publications de sang',
-        type: 'sub',
-        icontype: 'list',
-        collapse: 'pages',
+        type: 'link',
+        icontype: 'list', },
+        /*collapse: 'pages',
         children: [
             {path: 'pricing', title: 'Pricing', ab:'P'},
             {path: 'timeline', title: 'Timeline Page', ab:'TP'},
@@ -107,13 +107,13 @@ export const ROUTES: RouteInfo[] = [{
             {path: 'register', title: 'Inscription Page', ab:'RP'},
             {path: 'lock', title: 'Lock Screen Page', ab:'LSP'},
             {path: 'user', title: 'User Page', ab:'UP'}
-        ]
-    },{
-        path: '/pages',
+        ]*/
+   {
+        path: '/pubescor',
         title: 'Liste des escrotes médicales',
-        type: 'sub',
+        type: 'link',
         icontype: 'list',
-        collapse: 'pages',
+      /*  collapse: 'pages',
         children: [
             {path: 'pricing', title: 'Pricing', ab:'P'},
             {path: 'timeline', title: 'Timeline Page', ab:'TP'},
@@ -121,7 +121,7 @@ export const ROUTES: RouteInfo[] = [{
             {path: 'register', title: 'Register Page', ab:'RP'},
             {path: 'lock', title: 'Lock Screen Page', ab:'LSP'},
             {path: 'user', title: 'User Page', ab:'UP'}
-        ]
+        ]*/
     }
 ];
 @Component({

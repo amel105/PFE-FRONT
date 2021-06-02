@@ -1,0 +1,87 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+            <div class="card card-signup">
+              <div class="card-header card-header-rose card-header-icon">
+                <div class="card-icon">
+                  <i class="material-icons">assignment</i>
+                </div>
+                <h4 class="card-title" style="font-weight: bold;">Gestion des Comptes Utilisateurs</h4>
+              </div>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Rechercher..." aria-label="Search">
+                <button mat-raised-button type="submit" class="btn btn-white btn-round btn-just-icon">
+                    <i class="material-icons">search</i>
+                  </button>
+              </form>
+            <!-- <div class="input-group rounded" width="15px">
+                <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                  aria-describedby="search-addon" />
+                  <button mat-raised-button type="submit" class="btn btn-white btn-round btn-just-icon">
+                    <i class="material-icons">search</i>
+                  </button>
+              </div>-->
+             
+              <div class="card-body">
+                <div class="card-body">
+                  <div class="table-responsive">
+                      <table class="table">
+                              <thead>
+                                  <tr>  
+                    <th class="text-center">Id</th>
+                    <th class="text-center">Prénom</th>
+                    <th class="text-center">Nom de Famille</th>
+                    <th class="text-center">Email</th>
+                    <th class="text-center">Téléphone</th>             
+                    <th class="text-center">Etat</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                <tr *ngFor="let user of users">       
+                  <td class="text-center" style="font-weight: bold;">
+                    {{user.id}}    
+                    </td>           
+                              <td class="text-center">
+                                {{user.First_Name}}
+                              </td>
+                            
+                            <td class="text-center">
+                              {{user.Last_Name}}
+                            </td>
+                              <td class="text-center">
+                                {{user.Email}}
+                              </td>
+                              <td class="text-center">
+                                {{user.Phone_Number}}
+                              </td>
+                              <td class="td-actions text-right">
+                                <button mat-raised-button type="button" class="btn btn-info">
+                                    <i class="material-icons">check</i>
+                                </button>
+                                <button mat-raised-button type="button" class="btn btn-success">
+                                    <i class="material-icons">edit</i>
+                                </button>
+                                <button mat-raised-button type="button" class="btn btn-danger">
+                                    <i class="material-icons">close</i>
+                                </button>
+                             </td>
+                        </tr>
+                        </tbody>
+                       
+                      </table>
+  
+                      
+                      <div class="btn-group" data-toggle="buttons">
+                        <button mat-raised-button type="button" class="btn btn-round btn-danger">1</button>
+                        <button mat-raised-button type="button" class="btn btn-round btn-danger">2</button>
+                        <button mat-raised-button type="button" class="btn btn-round btn-danger">3</button>
+                     
+                      </div>
+                
+                      </div></div>
+                      
+     </div></div></div></div></div></div>
+         </div>
+  

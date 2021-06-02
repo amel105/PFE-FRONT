@@ -3,11 +3,11 @@ import { Component, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment';
 
 @Component({
-  selector: 'app-accueil',
-  templateUrl: './accueil.component.html',
+  selector: 'app-pubsang',
+  templateUrl: './pubsang.component.html',
   
 })
-export class AccueilComponent implements OnInit {
+export class PubsangComponent implements OnInit {
   test: Date = new Date();
   succes = false
   error = false

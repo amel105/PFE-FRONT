@@ -47,6 +47,9 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import{HttpClientModule,HttpClient} from '@angular/common/http';
 import { AppRoutes } from './app.routing';
 import { AccueilComponent } from './accueil/accueil.component';
+import { PubsangComponent } from './pubsang/pubsang.component';
+import { PubescorComponent } from './pubescor/pubescor.component';
+import { GestioncompteComponent } from './gestioncompte/gestioncompte.component';
 export function HttpLoaderFactory(http:HttpClient){
   return new TranslateHttpLoader(http);
 }
@@ -85,7 +88,7 @@ export function HttpLoaderFactory(http:HttpClient){
     MatTooltipModule,
     MatNativeDateModule
   ],
-  declarations: [AccueilComponent]
+  declarations: [AccueilComponent, PubsangComponent, PubescorComponent, GestioncompteComponent]
 })
 export class MaterialModule {}
 
