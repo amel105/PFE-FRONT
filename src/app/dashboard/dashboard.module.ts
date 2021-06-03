@@ -13,6 +13,7 @@ import { NouisliderModule } from 'ng2-nouislider';
 import { TagInputModule } from 'ngx-chips';
 import { ProfileComponent } from './profile/profile.component';
 
+
 @NgModule({
     imports: [
         CommonModule,

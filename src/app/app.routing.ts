@@ -1,4 +1,5 @@
 import { RouterModule, Routes } from '@angular/router';
+import { AccueilbenevoleComponent } from './dashboard/accueilbenevole/accueilbenevole.component';
 
 import { AdminLayoutComponent } from './layouts/admin/admin-layout.component';
 import { AuthLayoutComponent } from './layouts/auth/auth-layout.component';
@@ -7,7 +8,11 @@ import { AuthGuardService } from './services/auth-guard.service';
 import { LogoutGuardService } from './services/logout-guard.service.spec';
 
 export const AppRoutes: Routes = [
-  
+  {
+    path: 'accueilbenevole',
+    component: AccueilbenevoleComponent,
+  },
+
     {
       path: '',
       redirectTo: 'dashboard',

@@ -53,6 +53,7 @@ import { GestioncompteComponent } from './gestioncompte/gestioncompte.component'
 import { GestionsangComponent } from './gestionsang/gestionsang.component';
 import { GestionmedicalComponent } from './gestionmedical/gestionmedical.component';
 import { GestionescorteComponent } from './gestionescorte/gestionescorte.component';
+
 export function HttpLoaderFactory(http:HttpClient){
   return new TranslateHttpLoader(http);
 }
