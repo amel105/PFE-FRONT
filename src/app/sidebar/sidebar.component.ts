@@ -44,39 +44,39 @@ export const ROUTES: RouteInfo[] = [{
             {path: 'typography', title: 'Typography', ab:'T'}
         ]*/
     },{
-        path: '/forms',
+        path: '/gestionsang',
         title: 'Gérer les publications du sang',
-        type: 'sub',
+        type: 'link',
         icontype: 'favorite',
-        collapse: 'forms',
+        /*collapse: 'forms',
         children: [
             {path: 'regular', title: 'Regular Forms', ab:'RF'},
             {path: 'extended', title: 'Extended Forms', ab:'EF'},
             {path: 'validation', title: 'Validation Forms', ab:'VF'},
             {path: 'wizard', title: 'Wizard', ab:'W'}
-        ]
+        ]*/
     },{
-        path: '/tables',
+        path: '/gestionmedical',
         title: 'Gérer les publications médical',
-        type: 'sub',
+        type: 'link',
         icontype: 'accessible',
-        collapse: 'tables',
+        /*collapse: 'tables',
         children: [
             {path: 'regular', title: 'Regular Tables', ab:'RT'},
             {path: 'extended', title: 'Extended Tables', ab:'ET'},
             {path: 'datatables.net', title: 'Datatables.net', ab:'DT'}
-        ]
+        ]*/
     },{
-        path: '/maps',
+        path: '/gestionescorte',
         title: 'Gérer les publications des escortes',
-        type: 'sub',
+        type: 'link',
         icontype: 'volunteer_activism',
-        collapse: 'maps',
+       /* collapse: 'maps',
         children: [
             {path: 'google', title: 'Google Maps', ab:'GM'},
             {path: 'fullscreen', title: 'Full Screen Map', ab:'FSM'},
             {path: 'vector', title: 'Vector Map', ab:'VM'}
-        ]
+        ]*/
     },{
         path: '/calendar',
         title: 'Liste des utilisateurs',

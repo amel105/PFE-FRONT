@@ -27,6 +27,17 @@ export const AppRoutes: Routes = [
     {
         path: 'gestioncompte',
         loadChildren: './gestioncompte/gestioncompte.module#GestioncompteModule'
+    },
+    {
+        path: 'gestionmedical',
+        loadChildren: './gestionmedical/gestionmedical.module#GestionmedicalModule'
+    }, {
+        path: 'gestionescorte',
+        loadChildren: './gestionescorte/gestionescorte.module#GestionescorteModule'
+    },
+    {
+        path: 'gestionsang',
+        loadChildren: './gestionsang/gestionsang.module#GestionsangModule'
     }, {
         path: 'forms',
         loadChildren: './forms/forms.module#Forms'

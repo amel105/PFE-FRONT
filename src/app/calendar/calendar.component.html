@@ -18,11 +18,12 @@
                             <thead>
                                 <tr>  
                   <th class="text-center">Id</th>
+                  <th class="text-center">Utilisateur</th>
                   <th class="text-center">Prénom</th>
                   <th class="text-center">Nom de Famille</th>
                   <th class="text-center">Email</th>
                   <th class="text-center">Téléphone</th>             
-                  <th class="text-center">Etat</th>
+                  <th class="text-center">Confirmation</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -31,17 +32,26 @@
                   {{user.id}}    
                   </td>           
                             <td class="text-center">
-                              {{user.First_Name}}
+                             
                             </td>
                           
                           <td class="text-center">
-                            {{user.Last_Name}}
+                            {{user.First_Name}}
+                          
                           </td>
                             <td class="text-center">
+                              {{user.Last_Name}}
+                             
+                            </td>
+                            <td class="text-center">
                               {{user.Email}}
+                              
                             </td>
                             <td class="text-center">
                               {{user.Phone_Number}}
+                            </td>
+                            <td class="text-center" style="color: chartreuse;">
+                          
                             </td>
                            
                            

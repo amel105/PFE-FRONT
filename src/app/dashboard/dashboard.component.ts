@@ -3,6 +3,7 @@ import { TableData } from '../md/md-table/md-table.component';
 import { LegendItem, ChartType } from '../md/md-chart/md-chart.component';
 
 import * as Chartist from 'chartist';
+import { HttpClient } from '@angular/common/http';
 
 declare const $: any;
 
@@ -13,6 +14,8 @@ declare const $: any;
 export class DashboardComponent implements OnInit, AfterViewInit {
   // constructor(private navbarTitleService: NavbarTitleService, private notificationService: NotificationService) { }
   public tableData: TableData;
+  
+
   startAnimationForLineChart(chart: any) {
       let seq: any, delays: any, durations: any;
       seq = 0;
@@ -147,9 +150,9 @@ export class DashboardComponent implements OnInit, AfterViewInit {
       /* ----------==========     Emails Subscription Chart initialization    ==========---------- */
 
       const dataWebsiteViewsChart = {
-        labels: ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'],
+        labels: ['L', 'M', 'M', 'J', 'V', 'S', 'D',],
         series: [
-          [542, 443, 320, 780, 553, 453, 326, 434, 568, 610, 756, 895]
+          [542, 443, 320, 780, 553, 453,449 ]
 
         ]
       };
@@ -230,4 +233,5 @@ export class DashboardComponent implements OnInit, AfterViewInit {
            });
        }
    }
+   
 }
