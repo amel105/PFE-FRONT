@@ -105,7 +105,7 @@ export class DashboardComponent implements OnInit, AfterViewInit {
       /* ----------==========     Daily Sales Chart initialization    ==========---------- */
 
       const dataDailySalesChart = {
-          labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
+          labels: ['L', 'M', 'M', 'J', 'V', 'S', 'D'],
           series: [
               [12, 17, 7, 17, 23, 18, 38]
           ]
@@ -126,9 +126,9 @@ export class DashboardComponent implements OnInit, AfterViewInit {
       /* ----------==========     Completed Tasks Chart initialization    ==========---------- */
 
       const dataCompletedTasksChart = {
-          labels: ['12p', '3p', '6p', '9p', '12p', '3a', '6a', '9a'],
+          labels: ['L', 'M', 'M', 'J', 'V', 'S', 'D'],
           series: [
-              [230, 750, 450, 300, 280, 240, 200, 190]
+              [230, 750, 800, 300, 280, 240, 200]
           ]
       };
 
