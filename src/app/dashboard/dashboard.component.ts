@@ -3,6 +3,7 @@ import { TableData } from '../md/md-table/md-table.component';
 import { LegendItem, ChartType } from '../md/md-chart/md-chart.component';
 
 import * as Chartist from 'chartist';
+import { HttpClient } from '@angular/common/http';
 
 declare const $: any;
 
@@ -13,6 +14,8 @@ declare const $: any;
 export class DashboardComponent implements OnInit, AfterViewInit {
   // constructor(private navbarTitleService: NavbarTitleService, private notificationService: NotificationService) { }
   public tableData: TableData;
+  
+
   startAnimationForLineChart(chart: any) {
       let seq: any, delays: any, durations: any;
       seq = 0;
@@ -102,9 +105,9 @@ export class DashboardComponent implements OnInit, AfterViewInit {
       /* ----------==========     Daily Sales Chart initialization    ==========---------- */
 
       const dataDailySalesChart = {
-          labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
+          labels: ['L', 'M', 'M', 'J', 'V', 'S', 'D'],
           series: [
-              [12, 17, 7, 17, 23, 18, 38]
+              [20, 17, 7, 17, 23, 18, 38]
           ]
       };
 
@@ -123,9 +126,9 @@ export class DashboardComponent implements OnInit, AfterViewInit {
       /* ----------==========     Completed Tasks Chart initialization    ==========---------- */
 
       const dataCompletedTasksChart = {
-          labels: ['12p', '3p', '6p', '9p', '12p', '3a', '6a', '9a'],
+          labels: ['L', 'M', 'M', 'J', 'V', 'S', 'D'],
           series: [
-              [230, 750, 450, 300, 280, 240, 200, 190]
+              [230, 750, 800, 300, 280, 240, 200]
           ]
       };
 
@@ -147,9 +150,9 @@ export class DashboardComponent implements OnInit, AfterViewInit {
       /* ----------==========     Emails Subscription Chart initialization    ==========---------- */
 
       const dataWebsiteViewsChart = {
-        labels: ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'],
+        labels: ['L', 'M', 'M', 'J', 'V', 'S', 'D',],
         series: [
-          [542, 443, 320, 780, 553, 453, 326, 434, 568, 610, 756, 895]
+          [542, 443, 320, 780, 553, 453,449 ]
 
         ]
       };
@@ -177,13 +180,13 @@ export class DashboardComponent implements OnInit, AfterViewInit {
 
       $('#worldMap').vectorMap({
         map: 'world_en',
-        backgroundColor: 'transparent',
+        backgroundColor: '#defae9',
          borderColor: '#818181',
          borderOpacity: 0.25,
          borderWidth: 1,
          color: '#b3b3b3',
          enableZoom: true,
-         hoverColor: '#eee',
+         hoverColor: '#f25252',
          hoverOpacity: null,
          normalizeFunction: 'linear',
          scaleColors: ['#b6d6ff', '#005ace'],
@@ -192,9 +195,9 @@ export class DashboardComponent implements OnInit, AfterViewInit {
          showTooltip: true,
          onRegionClick: function(element, code, region)
          {
-             var message = 'You clicked "'
+             var message = 'Votre Région est : "'
                  + region
-                 + '" which has the code: '
+                 + '" code postal: '
                  + code.toUpperCase();
 
              alert(message);
@@ -230,4 +233,5 @@ export class DashboardComponent implements OnInit, AfterViewInit {
            });
        }
    }
+   
 }
