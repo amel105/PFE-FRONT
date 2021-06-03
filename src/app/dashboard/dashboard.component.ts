@@ -107,7 +107,7 @@ export class DashboardComponent implements OnInit, AfterViewInit {
       const dataDailySalesChart = {
           labels: ['L', 'M', 'M', 'J', 'V', 'S', 'D'],
           series: [
-              [12, 17, 7, 17, 23, 18, 38]
+              [20, 17, 7, 17, 23, 18, 38]
           ]
       };
 
@@ -180,13 +180,13 @@ export class DashboardComponent implements OnInit, AfterViewInit {
 
       $('#worldMap').vectorMap({
         map: 'world_en',
-        backgroundColor: 'transparent',
+        backgroundColor: '#defae9',
          borderColor: '#818181',
          borderOpacity: 0.25,
          borderWidth: 1,
          color: '#b3b3b3',
          enableZoom: true,
-         hoverColor: '#eee',
+         hoverColor: '#f25252',
          hoverOpacity: null,
          normalizeFunction: 'linear',
          scaleColors: ['#b6d6ff', '#005ace'],
@@ -195,9 +195,9 @@ export class DashboardComponent implements OnInit, AfterViewInit {
          showTooltip: true,
          onRegionClick: function(element, code, region)
          {
-             var message = 'You clicked "'
+             var message = 'Votre Région est : "'
                  + region
-                 + '" which has the code: '
+                 + '" code postal: '
                  + code.toUpperCase();
 
              alert(message);
