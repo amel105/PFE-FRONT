@@ -19,9 +19,9 @@
                         </div>
                   <input type="text" required minlength="3"  class="form-control" name ="FirstName" #Name="ngModel" ngModel placeholder="Tapez votre nom...">
                       </div>
-                      <mat-error *ngIf="firstName.touched && !firstName.valid">
+                      <!-- <mat-error *ngIf="firstName.touched && !firstName.valid">
                          First Name is <strong> required </strong>
-                      </mat-error> 
+                      </mat-error>  -->
                      </div> 
                     <div class="form-group has-default">
                       <div class="input-group">
@@ -32,9 +32,9 @@
                         </div>
               <input type="Email" required class="form-control"  name ="Email" #Email="ngModel" ngModel placeholder=" Tapez votre email...">
                          </div>
-                       <mat-error *ngIf="Email.touched && !Email.valid">
+                       <!-- <mat-error *ngIf="Email.touched && !Email.valid">
                         <p> email is required</p> 
-                      </mat-error> 
+                      </mat-error>  -->
                     </div>
                     <div class="form-group has-default">
                       <div class="input-group">
