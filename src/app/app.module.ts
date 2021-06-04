@@ -53,6 +53,7 @@ import { GestioncompteComponent } from './gestioncompte/gestioncompte.component'
 import { GestionsangComponent } from './gestionsang/gestionsang.component';
 import { GestionmedicalComponent } from './gestionmedical/gestionmedical.component';
 import { GestionescorteComponent } from './gestionescorte/gestionescorte.component';
+import { AccueilbenificeurComponent } from './accueilbenificeur/accueilbenificeur.component';
 
 export function HttpLoaderFactory(http:HttpClient){
   return new TranslateHttpLoader(http);
@@ -92,7 +93,7 @@ export function HttpLoaderFactory(http:HttpClient){
     MatTooltipModule,
     MatNativeDateModule
   ],
-  declarations: [AccueilComponent, PubsangComponent, PubescorComponent, GestioncompteComponent, GestionsangComponent, GestionmedicalComponent, GestionescorteComponent]
+  declarations: [AccueilComponent, PubsangComponent, PubescorComponent, GestioncompteComponent, GestionsangComponent, GestionmedicalComponent, GestionescorteComponent, AccueilbenificeurComponent]
 })
 export class MaterialModule {}
 
