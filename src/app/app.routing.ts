@@ -1,7 +1,7 @@
 import { RouterModule, Routes } from '@angular/router';
 import { AccueilbenevoleComponent } from './dashboard/accueilbenevole/accueilbenevole.component';
 import { AccueilbenificeurComponent } from './dashboard/accueilbenificeur/accueilbenificeur.component';
-
+import { DonationsangComponent } from './dashboard/donationsang/donationsang.component';
 import { AdminLayoutComponent } from './layouts/admin/admin-layout.component';
 import { AuthLayoutComponent } from './layouts/auth/auth-layout.component';
 import { RegisterComponent } from './pages/register/register.component';
@@ -17,7 +17,10 @@ export const AppRoutes: Routes = [
     path: 'accueilbeneficeur',
     component: AccueilbenificeurComponent,
   },
-
+ {
+    path: 'donationsang',
+    component: DonationsangComponent,
+  },
     {
       path: '',
       redirectTo: 'dashboard',

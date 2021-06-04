@@ -12,6 +12,7 @@ import { WizardComponent } from '../forms/wizard/wizard.component';
 import { NouisliderModule } from 'ng2-nouislider';
 import { TagInputModule } from 'ngx-chips';
 import { ProfileComponent } from './profile/profile.component';
+import { DonationsangComponent } from './donationsang/donationsang.component';
 
 
 @NgModule({
@@ -27,7 +28,7 @@ import { ProfileComponent } from './profile/profile.component';
         TagInputModule,
         MaterialModule
     ],
-    declarations: [DashboardComponent,ProfileComponent, EditProfileComponent,WizardComponent]
+    declarations: [DashboardComponent,ProfileComponent, EditProfileComponent,WizardComponent, DonationsangComponent]
 })
 
 export class DashboardModule {}
