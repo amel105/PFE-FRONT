@@ -143,7 +143,7 @@ export class SidebarComponent implements OnInit {
        //
        
        this.user = localStorage.getItem('username')
-       // alert(this.user)
+        //alert(this.user)
       }
     
     public menuItems: any[];

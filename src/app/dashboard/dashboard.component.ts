@@ -4,6 +4,7 @@ import { LegendItem, ChartType } from '../md/md-chart/md-chart.component';
 
 import * as Chartist from 'chartist';
 import { HttpClient } from '@angular/common/http';
+import { count } from 'console';
 
 declare const $: any;
 
@@ -14,6 +15,21 @@ declare const $: any;
 export class DashboardComponent implements OnInit, AfterViewInit {
   // constructor(private navbarTitleService: NavbarTitleService, private notificationService: NotificationService) { }
   public tableData: TableData;
+  test: Date = new Date();
+  succes = false
+  error = false
+  message = ""
+  user :string
+
+  constructor(
+    private http: HttpClient
+    ) { 
+       //
+       
+       this.user = localStorage.getItem('userId')
+     
+        //alert(this.user)
+      }
   
 
   startAnimationForLineChart(chart: any) {
