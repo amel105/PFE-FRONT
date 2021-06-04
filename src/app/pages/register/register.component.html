@@ -67,6 +67,36 @@
                         <input type="PhoneNumber" name ="PhoneNumber" #PhoneNumber="ngModel" ngModel class="form-control" placeholder=" Tapez votre téléphone...">
                       </div>
                     </div>
+
+
+
+                    <div class="form-group has-default">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">
+                            <i class="material-icons">phone</i>
+                          </span>
+                        </div>
+                        <input type="PhoneNumber" name ="PhoneNumber" #PhoneNumber="ngModel" ngModel class="form-control" placeholder=" Tapez votre téléphone...">
+                      </div>
+                    </div>
+
+
+
+
+
+<mat-form-field appearance="fill">
+  <mat-label>role utilisateur</mat-label>
+  <mat-select name ="role" #role="ngModel" ngModel >
+    <mat-option [value]="1" >
+      Benevole
+    </mat-option>
+        <mat-option [value]="2">
+      Beneficeur
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
                     <mat-checkbox class="form-check">
                       J'accepte 
                       <a href="#something">les termes et les conditions</a>.

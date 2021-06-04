@@ -1,22 +1,21 @@
 import { Injectable } from '@angular/core';
 import { CanActivate, Router } from '@angular/router';
-
 @Injectable({
   providedIn: 'root'
 })
-export class AuthGuardService implements CanActivate{
+export class BenefeceurGuardService implements CanActivate{
 
 
   constructor(private router: Router) { }
   canActivate():boolean {
     
-    if(this.getToken()!== null && localStorage.getItem('role') == 'admin'){
+    if(this.getToken()!== null && localStorage.getItem('role') == 'beneficeur'){
         return true;
     }else if(this.getToken()!== null && localStorage.getItem('role') == 'benevole'){
       this.router.navigate(['/accueilbenevole']);
 
-    }else if(this.getToken()!== null && localStorage.getItem('role') == 'beneficeur'){
-      this.router.navigate(['/accueilbeneficeur']);
+    }else if(this.getToken()!== null && localStorage.getItem('role') == 'admin'){
+      this.router.navigate(['/dashboard']);
 
     }
     

@@ -6,19 +6,31 @@ import { AdminLayoutComponent } from './layouts/admin/admin-layout.component';
 import { AuthLayoutComponent } from './layouts/auth/auth-layout.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { AuthGuardService } from './services/auth-guard.service';
-import { LogoutGuardService } from './services/logout-guard.service.spec';
+import { BenefeceurGuardService } from './services/benefeceur-guard.service';
+import { BenevolGuardService } from './services/benevol-guard.service';
+import { LogoutGuardService } from './services/logout-guard.service';
+//import { LogoutGuardService } from './services/logout-guard.service.ts';
+//import { BenevolGuardService } from './services/benevol-guard.service.ts';
+//import { BenefeceurGuardService } from './services/benefeceur-guard.service.ts';
+//import {Log}
 
 export const AppRoutes: Routes = [
   {
     path: 'accueilbenevole',
+      canActivate:[BenevolGuardService],
+    
     component: AccueilbenevoleComponent,
   },
   {
     path: 'accueilbeneficeur',
+          canActivate:[BenefeceurGuardService],
+
     component: AccueilbenificeurComponent,
   },
  {
     path: 'donationsang',
+      canActivate:[BenevolGuardService],
+
     component: DonationsangComponent,
   },
     {
@@ -27,7 +39,7 @@ export const AppRoutes: Routes = [
       pathMatch: 'full',
     }, {
       path: '',
-      canActivate:[AuthGuardService,],
+      canActivate:[AuthGuardService],
       component: AdminLayoutComponent,
       children: [
           {
