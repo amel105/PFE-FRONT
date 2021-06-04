@@ -1,5 +1,6 @@
 import { RouterModule, Routes } from '@angular/router';
 import { AccueilbenevoleComponent } from './dashboard/accueilbenevole/accueilbenevole.component';
+import { AccueilbenificeurComponent } from './dashboard/accueilbenificeur/accueilbenificeur.component';
 
 import { AdminLayoutComponent } from './layouts/admin/admin-layout.component';
 import { AuthLayoutComponent } from './layouts/auth/auth-layout.component';
@@ -11,6 +12,10 @@ export const AppRoutes: Routes = [
   {
     path: 'accueilbenevole',
     component: AccueilbenevoleComponent,
+  },
+  {
+    path: 'accueilbeneficeur',
+    component: AccueilbenificeurComponent,
   },
 
     {
