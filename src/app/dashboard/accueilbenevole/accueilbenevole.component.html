@@ -13,7 +13,12 @@
    <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Rechercher..." aria-label="Search">
       <button class=mat-raised-button class="btn btn-danger" type="submit">Rechercher</button>
-    </form>
+      <li class="nav-item">
+        <a href="javascript:void(0)" class="nav-link">
+      <button class=mat-raised-button class="btn btn-danger" (click)="logout()"  type="submit">Déconnexion</button>
+        </a>
+       </li>
+      </form>
   </nav>
 
   <div class="wrapper wrapper-full-page">
