@@ -55,6 +55,8 @@ import { GestionmedicalComponent } from './gestionmedical/gestionmedical.compone
 import { GestionescorteComponent } from './gestionescorte/gestionescorte.component';
 import { AccueilbenificeurComponent } from './dashboard/accueilbenificeur/accueilbenificeur.component';
 import { AccueilbenevoleComponent } from './dashboard/accueilbenevole/accueilbenevole.component';
+
+
 export function HttpLoaderFactory(http:HttpClient){
   return new TranslateHttpLoader(http);
 }

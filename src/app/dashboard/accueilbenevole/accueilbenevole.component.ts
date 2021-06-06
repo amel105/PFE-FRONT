@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccueilbenevoleComponent implements OnInit {
 
-  constructor() { }
+  test: Date = new Date();
+  succes = false
+  error = false
+  message = ""
+  user :string 
+  constructor(
+    private http: HttpClient
+    ) { 
+       //
+       
+       this.user = localStorage.getItem('username')
+        //alert(this.user)
+      }
+  
 
   ngOnInit(): void {
   }
+
+  logout(){
+    localStorage.removeItem('token')
+    location.reload();
+
+}
 
 }

@@ -1,0 +1,135 @@
+<nav class="nav nav-pills" style="background-color:#cc0000;">
+    <a class="navbar-brand d-none d-sm-none d-md-block" href="#">  <img src="/assets/img/need.png" width="100 px"> </a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a class="nav-link" routerLinkActive="active" style="color:#ffffff;"href="#"> <i class="material-icons">home</i>&nbsp;&nbsp;Accueil</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a class="nav-link" style="color:#ffffff;" href="#"> <i class="material-icons">
+        supervisor_account</i>&nbsp;&nbsp;Profil</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+     
+   <form class="form-inline my-2 my-lg-0">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <a class="nav-link" style="color:#ffffff;" href="#">{{user}}</a>
+     <li class="nav-item">
+       <a href="javascript:void(0)" class="nav-link">
+     <div class="example-button-container">
+       <button mat-button aria-label="Example icon button with a home icon" (click)="logout()"  type="submit">
+         <mat-icon>logout</mat-icon>
+       </button>
+     </div>
+     </a></li></form>
+  </nav>
+<div class="col-md-12">
+    <div class="card ">
+      <div class="card-header card-header-rose card-header-text">
+        <div class="card-text">
+          <h4 class="card-title"> <i class="material-icons">volunteer_activism</i>Donation Medical/Paramedical</h4>
+        </div>
+      </div>
+      <div class="card-body ">
+        <form method="get" action="/" class="form-horizontal">
+          <div class="row">
+            <label class="col-sm-2 col-form-label">Prenom :</label>
+            <div class="col-sm-10">
+              <mat-form-field class="example-full-width">
+                <input matInput type="text">
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <label class="col-sm-2 col-form-label">Nom :</label>
+            <div class="col-sm-10">
+              <mat-form-field class="example-full-width">
+                <input matInput type="text">
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <label class="col-sm-2 col-form-label">Age :</label>
+            <div class="col-sm-10">
+              <mat-form-field class="example-full-width">
+                <input matInput type="number">
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <label class="col-sm-2 col-form-label">Email :</label>
+            <div class="col-sm-10">
+              <mat-form-field class="example-full-width">
+                <input matInput type="email">
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <label class="col-sm-2 col-form-label">Telephone :</label>
+            <div class="col-sm-10">
+              <mat-form-field class="example-full-width">
+                <input matInput type="text">
+              </mat-form-field>
+            </div>
+          </div>
+        
+          <div class="row">
+            <label class="col-sm-2 col-form-label">Type materiel :</label>
+            <div class="col-sm-10">
+              <mat-form-field class="example-full-width">
+                <input matInput type="text">
+              </mat-form-field>
+            </div>
+          </div>
+
+              
+          <div class="row">
+            <label class="col-sm-2 col-form-label">Adresse :</label>
+            <div class="col-sm-10">
+              <mat-form-field class="example-full-width">
+                <input matInput type="text">
+              </mat-form-field>
+            </div>
+          </div>
+          
+<mat-form-field appearance="fill">
+    <mat-label>role utilisateur</mat-label>
+    <mat-select name ="role" >
+      <mat-option [value]="1" >
+        Benevole
+      </mat-option>
+          <mat-option [value]="2">
+        Beneficeur
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <br>
+          <button type="button" class="btn btn-outline-success">Ajouter don</button>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button type="button" class="btn btn-outline-warning">Modifier don</button>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button type="button" class="btn btn-outline-danger">Supprimer don</button>
+        
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <!-- Grid container -->
+  
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color:#cc0000;">
+      
+      <a class="text-white">© 2021 Be Helpful <i class="material-icons">favorite</i> par
+        <a href="https://www.creative-tim.com" target="_blank">Senda Khelil & Amal Mejri</a>pour un meilleur web.</a>
+    </div>
+    </footer>
+    <!-- Copyright -->

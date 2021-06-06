@@ -4,7 +4,6 @@ import { LegendItem, ChartType } from '../md/md-chart/md-chart.component';
 
 import * as Chartist from 'chartist';
 import { HttpClient } from '@angular/common/http';
-import { count } from 'console';
 
 declare const $: any;
 

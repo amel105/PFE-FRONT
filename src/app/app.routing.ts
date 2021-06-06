@@ -1,7 +1,10 @@
 import { RouterModule, Routes } from '@angular/router';
 import { AccueilbenevoleComponent } from './dashboard/accueilbenevole/accueilbenevole.component';
 import { AccueilbenificeurComponent } from './dashboard/accueilbenificeur/accueilbenificeur.component';
+import { DonatemedicalComponent } from './dashboard/donatemedical/donatemedical.component';
+import { DonatesangComponent } from './dashboard/donatesang/donatesang.component';
 import { DonationsangComponent } from './dashboard/donationsang/donationsang.component';
+import { DonateescorComponent } from './dashboard/donateescor/donateescor.component';
 import { AdminLayoutComponent } from './layouts/admin/admin-layout.component';
 import { AuthLayoutComponent } from './layouts/auth/auth-layout.component';
 import { RegisterComponent } from './pages/register/register.component';
@@ -22,6 +25,23 @@ export const AppRoutes: Routes = [
     component: AccueilbenevoleComponent,
   },
   {
+    path: 'donateescorte',
+    
+    
+    component: DonateescorComponent,
+  },
+  {
+    path: 'donatemedical',
+    
+    
+    component: DonatemedicalComponent,
+  },
+  {
+    path: 'donatesang',
+    
+    component: DonatesangComponent,
+  },
+  {
     path: 'accueilbeneficeur',
           canActivate:[BenefeceurGuardService],
 
@@ -29,10 +49,10 @@ export const AppRoutes: Routes = [
   },
  {
     path: 'donationsang',
-      canActivate:[BenevolGuardService],
-
     component: DonationsangComponent,
   },
+ 
+
     {
       path: '',
       redirectTo: 'dashboard',
@@ -63,10 +83,7 @@ export const AppRoutes: Routes = [
     {
         path: 'gestionsang',
         loadChildren: './gestionsang/gestionsang.module#GestionsangModule'
-    }, {
-        path: 'forms',
-        loadChildren: './forms/forms.module#Forms'
-    }, {
+    },{
         path: 'tables',
         loadChildren: './tables/tables.module#TablesModule'
     }, {
@@ -93,23 +110,29 @@ export const AppRoutes: Routes = [
     {
         path: 'accueil',
         loadChildren: './accueil/accueil.module#AccueilModule'
-    },{
+    },
+    {
         path: '',
         loadChildren: './userpage/user.module#UserModule'
     }, {
         path: '',
         loadChildren: './timeline/timeline.module#TimelineModule'
     }
-  ]}, {
-      path: '',
-      canActivate:[LogoutGuardService],
-      component: AuthLayoutComponent,
-      children: [{
-        path: 'pages',
-        loadChildren: './pages/pages.module#PagesModule'
-      }]
-    }
+  ]},
+  {
+    path: '',
+    component: AuthLayoutComponent,
+    canActivate:[LogoutGuardService],
+    children: [{
+      path: 'pages',
+      loadChildren: './pages/pages.module#PagesModule'
+    }]
+  }
 ];
+
+     
+     
+  
 
 
 

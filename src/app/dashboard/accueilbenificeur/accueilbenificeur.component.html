@@ -11,14 +11,38 @@
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
      
    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Rechercher..." aria-label="Search">
-      <button class=mat-raised-button class="btn btn-danger" type="submit">Rechercher</button>
-      <li class="nav-item">
+      
+    <!--<input class="form-control mr-sm-2" type="search" placeholder="Rechercher..." aria-label="Search">
+    <button class=mat-raised-button class="btn btn-danger" type="submit">Rechercher</button>-->
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a class="nav-link" style="color:#ffffff;" href="#">{{user}}</a>
+    <li class="nav-item">
+      <a href="javascript:void(0)" class="nav-link">
+    <div class="example-button-container">
+      <button mat-button aria-label="Example icon button with a home icon" (click)="logout()"  type="submit">
+        <mat-icon>logout</mat-icon>
+      </button>
+    </div>
+    </a></li></form>
+    <!--<li class="nav-item">
         <a href="javascript:void(0)" class="nav-link">
-      <button class=mat-raised-button class="btn btn-danger" (click)="logout()"  type="submit">Déconnexion</button>
+      <button class=mat-raised-button class="btn btn-danger" type="submit">Rechercher</button>
+      <button mat-icon-button color="primary" aria-label="Example icon button with a home icon" (click)="logout()"  type="submit">
+        <mat-icon>home</mat-icon>
+      </button>
+      </a></li></form>-->
+      <!--  <li class="nav-item">
+        <a href="javascript:void(0)" class="nav-link">
+      <button class=mat-raised-button class="btn btn-danger" (click)="logout()"  type="submit"><i class="material-icons">logout</i></button>
         </a>
        </li>
-    </form>
+    </form>-->
   </nav>
 
   <div class="wrapper wrapper-full-page">
@@ -110,5 +134,6 @@
       <a class="text-white">© 2021 Be Helpful <i class="material-icons">favorite</i> par
         <a href="https://www.creative-tim.com" target="_blank">Senda Khelil & Amal Mejri</a>pour un meilleur web.</a>
     </div>
+  
     <!-- Copyright -->
   

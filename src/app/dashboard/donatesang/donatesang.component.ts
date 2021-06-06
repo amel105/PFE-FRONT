@@ -1,12 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
-  selector: 'app-accueilbenificeur',
-  templateUrl: './accueilbenificeur.component.html',
-  styleUrls: ['./accueilbenificeur.component.css']
+  selector: 'app-donatesang',
+  templateUrl: './donatesang.component.html',
+  styleUrls: ['./donatesang.component.css']
 })
-export class AccueilbenificeurComponent implements OnInit {
+export class DonatesangComponent implements OnInit {
+
   test: Date = new Date();
   succes = false
   error = false
@@ -20,15 +22,8 @@ export class AccueilbenificeurComponent implements OnInit {
        this.user = localStorage.getItem('username')
         //alert(this.user)
       }
-  
 
   ngOnInit(): void {
   }
-
-  logout(){
-    localStorage.removeItem('token')
-    location.reload();
-
-}
 
 }

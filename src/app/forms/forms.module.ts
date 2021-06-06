@@ -15,6 +15,7 @@ import { WizardComponent } from './wizard/wizard.component';
 import { FieldErrorDisplayComponent } from './validationforms/field-error-display/field-error-display.component';
 
 
+
 @NgModule({
   imports: [
     CommonModule,
@@ -31,6 +32,7 @@ import { FieldErrorDisplayComponent } from './validationforms/field-error-displa
       ValidationFormsComponent,
       WizardComponent,
       FieldErrorDisplayComponent
+      
   ]
 })
 
