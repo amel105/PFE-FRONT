@@ -54,7 +54,7 @@ import { GestionsangComponent } from './gestionsang/gestionsang.component';
 import { GestionmedicalComponent } from './gestionmedical/gestionmedical.component';
 import { GestionescorteComponent } from './gestionescorte/gestionescorte.component';
 import { AccueilbenificeurComponent } from './dashboard/accueilbenificeur/accueilbenificeur.component';
-import { AccueilbenevoleComponent } from './dashboard/accueilbenevole/accueilbenevole.component';
+import { BenevoleComponent } from './layouts/benevole/benevole.component';
 
 
 export function HttpLoaderFactory(http:HttpClient){
@@ -81,6 +81,7 @@ export function HttpLoaderFactory(http:HttpClient){
     MatProgressBarModule,
     MatProgressSpinnerModule,
     MatRadioModule,
+    MatFormFieldModule,
     MatSelectModule,
     MatDatepickerModule,
     MatButtonModule,
@@ -95,7 +96,7 @@ export function HttpLoaderFactory(http:HttpClient){
     MatTooltipModule,
     MatNativeDateModule
   ],
-  declarations: [AccueilComponent, PubsangComponent, PubescorComponent, GestioncompteComponent,GestionsangComponent, GestionmedicalComponent, GestionescorteComponent, AccueilbenevoleComponent, GestionsangComponent, GestionmedicalComponent, GestionescorteComponent, AccueilbenificeurComponent]
+  declarations: [AccueilComponent, PubsangComponent, PubescorComponent, GestioncompteComponent,GestionsangComponent, GestionmedicalComponent, GestionescorteComponent, GestionsangComponent, GestionmedicalComponent, GestionescorteComponent, AccueilbenificeurComponent]
 })
 export class MaterialModule {}
 
@@ -126,7 +127,8 @@ export class MaterialModule {}
     declarations: [
         AppComponent,
         AdminLayoutComponent,
-        AuthLayoutComponent
+        AuthLayoutComponent,
+        BenevoleComponent
     ],
     providers : [
       MatNativeDateModule

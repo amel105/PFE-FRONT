@@ -2,12 +2,12 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-donationsang',
-  templateUrl: './donationsang.component.html',
-    styleUrls: ['./donationsang.component.css']
-
+  selector: 'app-donateescor',
+  templateUrl: './donateescor.component.html',
+  styleUrls: ['./donateescor.component.css']
 })
-export class DonationsangComponent implements OnInit {
+export class DonateescorComponent implements OnInit {
+
   test: Date = new Date();
   succes = false
   error = false
@@ -21,9 +21,12 @@ export class DonationsangComponent implements OnInit {
        this.user = localStorage.getItem('username')
         //alert(this.user)
       }
-  
-
   ngOnInit(): void {
   }
+  logout(){
+    localStorage.removeItem('token')
+    location.reload();
+
+}
 
 }

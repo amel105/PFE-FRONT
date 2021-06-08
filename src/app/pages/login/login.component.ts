@@ -16,6 +16,7 @@ export class LoginComponent implements OnInit {
     private sidebarVisible: boolean;
     private nativeElement: Node;
     error: boolean;
+    success : boolean;
 
     constructor(private element: ElementRef,private http: HttpClient
         ) {
@@ -62,7 +63,7 @@ export class LoginComponent implements OnInit {
                 localStorage.setItem('userId',resultat.user.id)
                 localStorage.setItem('username',resultat.user.firstName + " "+ resultat.user.lastName )
                 localStorage.setItem('role',resultat.user.roles[0])
-
+               this.success =true
                     console.log(resultat);
                     
                 location.reload();

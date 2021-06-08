@@ -24,5 +24,11 @@ export class DonatemedicalComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
+  logout(){
+    localStorage.removeItem('token')
+    location.reload();
+
+}
 
 }

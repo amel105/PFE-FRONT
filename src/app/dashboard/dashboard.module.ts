@@ -8,14 +8,11 @@ import { MaterialModule } from '../app.module';
 import { DashboardComponent } from './dashboard.component';
 import { DashboardRoutes } from './dashboard.routing';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
-import { WizardComponent } from '../forms/wizard/wizard.component';
+//import { WizardComponent } from '../forms/wizard/wizard.component';
 import { NouisliderModule } from 'ng2-nouislider';
 import { TagInputModule } from 'ngx-chips';
 import { ProfileComponent } from './profile/profile.component';
-import { DonationsangComponent } from './donationsang/donationsang.component';
-import { DonatesangComponent } from './donatesang/donatesang.component';
-import { DonatemedicalComponent } from './donatemedical/donatemedical.component';
-import { DonateescorComponent } from './donateescor/donateescor.component';
+
 import { AlerteComponent } from './alerte/alerte.component';
 import { ReclamsangComponent } from './reclamsang/reclamsang.component';
 import { ReclammedicalComponent } from './reclammedical/reclammedical.component';
@@ -23,11 +20,23 @@ import { ReclamescorComponent } from './reclamescor/reclamescor.component';
 
 
 
+/*
+import { ExtendedFormsComponent } from '../forms/extendedforms/extendedforms.component';
+import { RegularFormsComponent } from '../forms/regularforms/regularforms.component';
+import { ValidationFormsComponent } from '../forms/validationforms/validationforms.component';
+//import { WizardComponent } from '../forms/wizard/wizard.component';
+import { FieldErrorDisplayComponent } from '../forms/validationforms/field-error-display/field-error-display.component';*/
+
+
 @NgModule({
     imports: [
         CommonModule,
+        /*ExtendedFormsComponent,
+        RegularFormsComponent,
+        ValidationFormsComponent,
+        FieldErrorDisplayComponent,*/
         RouterModule.forChild(DashboardRoutes),
-        FormsModule,
+        
         MdModule,
         MaterialModule,
         FormsModule,
@@ -36,7 +45,10 @@ import { ReclamescorComponent } from './reclamescor/reclamescor.component';
         TagInputModule,
         MaterialModule
     ],
-    declarations: [DashboardComponent,ProfileComponent, EditProfileComponent,WizardComponent, DonationsangComponent, DonatesangComponent, DonatemedicalComponent, DonateescorComponent, AlerteComponent, ReclamsangComponent, ReclammedicalComponent, ReclamescorComponent]
+    declarations: [DashboardComponent,ProfileComponent, 
+        EditProfileComponent, AlerteComponent, ReclamsangComponent,
+        
+         ReclammedicalComponent, ReclamescorComponent]
 })
 
 export class DashboardModule {}

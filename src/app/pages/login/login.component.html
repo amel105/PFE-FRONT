@@ -41,6 +41,13 @@
                   <a class="nav-link" [routerLink]="['/pages/register']">je n'ai pas de compte</a>
                 </p></div>
               </div>
+              <div class="alert alert-success"  *ngIf="success">
+                <button mat-button type="button" width="10px" class="close" data-dismiss="alert" aria-label="Close">
+                  <i class="material-icons">close</i>
+                </button>
+                <span>
+                  <b>Connexion avec succès</b></span>
+              </div>
               <div class="alert alert-danger"  *ngIf="error">
                 <button mat-button type="button" width="10px" class="close" data-dismiss="alert" aria-label="Close">
                   <i class="material-icons">close</i>
@@ -48,6 +55,8 @@
                 <span>
                   <b> vérifier votre paramétres de connexion </b> </span>
               </div>
+              
+             
 
             </div>
           </form>

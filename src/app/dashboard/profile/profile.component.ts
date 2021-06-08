@@ -17,6 +17,7 @@ export class ProfileComponent implements OnInit {
     Country:'',
     BloodGroup:'',
     picture:"",
+    role:'',
   }
   constructor(private http:HttpClient) { 
    
@@ -38,6 +39,7 @@ export class ProfileComponent implements OnInit {
           Job:obj.Job,
           Country:obj.Country,
           BloodGroup:obj.BloodGroup,
+          role:obj.role,
           picture:"",
   
         }

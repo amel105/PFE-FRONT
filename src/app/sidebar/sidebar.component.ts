@@ -43,7 +43,7 @@ export const ROUTES: RouteInfo[] = [{
             {path: 'icons', title: 'Icons', ab:'I'},
             {path: 'typography', title: 'Typography', ab:'T'}
         ]*/
-    },{
+    },/*{
         path: '/donationsang',
         title: '',
         type: 'sub',
@@ -56,7 +56,7 @@ export const ROUTES: RouteInfo[] = [{
             {path: 'validation', title: 'Validation Forms', ab:'VF'},
             {path: 'wizard', title: 'Wizard', ab:'W'}
         ]
-    },
+    },*/
     {
         path: '/',
         title: 'Gérer les publications du sang',
@@ -70,17 +70,18 @@ export const ROUTES: RouteInfo[] = [{
             {path: 'wizard', title: 'Wizard', ab:'W'}
         ]*/
     },
-    /*{
+    {
         path: '/gestionmedical',
         title: 'Gérer les publications médical',
         type: 'link',
         icontype: 'accessible',
-        /*collapse: 'tables',
+        collapse: 'tables',
         children: [
-            {path: 'regular', title: 'Regular Tables', ab:'RT'},
+          /*  {path: 'regular', title: 'Regular Tables', ab:'RT'},
             {path: 'extended', title: 'Extended Tables', ab:'ET'},
-            {path: 'datatables.net', title: 'Datatables.net', ab:'DT'}
-        ]},*/
+            {path: 'datatables.net', title: 'Datatables.net', ab:'DT'}*/
+        ]},
+
     {
         path: '/gestionescorte',
         title: 'Gérer les publications des escortes',

@@ -14,21 +14,6 @@ declare const $: any;
 export class DashboardComponent implements OnInit, AfterViewInit {
   // constructor(private navbarTitleService: NavbarTitleService, private notificationService: NotificationService) { }
   public tableData: TableData;
-  test: Date = new Date();
-  succes = false
-  error = false
-  message = ""
-  user :string
-
-  constructor(
-    private http: HttpClient
-    ) { 
-       //
-       
-       this.user = localStorage.getItem('userId')
-     
-        //alert(this.user)
-      }
   
 
   startAnimationForLineChart(chart: any) {
