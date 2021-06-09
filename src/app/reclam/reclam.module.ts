@@ -1,28 +1,27 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DonationsangComponent } from './donationsang/donationsang.component';
-import { DonatesangComponent } from './donatesang/donatesang.component';
-import { DonatemedicalComponent } from './donatemedical/donatemedical.component';
-import { DonateescorComponent } from './donateescor/donateescor.component';
-import { DonatedRoutes } from './donate.routing';
+
 import { RouterModule } from '@angular/router';
 import { MdModule } from '../md/md.module';
 import { MaterialModule } from '../app.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NouisliderModule } from 'ng2-nouislider';
 import { TagInputModule } from 'ngx-chips';
-import { AccueilbenevoleComponent } from './accueilbenevole/accueilbenevole.component';
+import { AccueilbenificeurComponent } from './accueilbenificeur/accueilbenificeur.component';
+import { ReclamRoutes } from './reclam.routing';
+import { ReclamescorComponent } from './reclamescor/reclamescor.component';
+import { ReclammedicalComponent } from './reclammedical/reclammedical.component';
+import { ReclamsangComponent } from './reclamsang/reclamsang.component';
 
 @NgModule({
-  declarations: [DonationsangComponent, 
-    DonatesangComponent, DonatemedicalComponent, DonateescorComponent,AccueilbenevoleComponent],
+  declarations: [ReclamescorComponent,ReclammedicalComponent,ReclamsangComponent,AccueilbenificeurComponent],
   imports: [
     CommonModule,
         /*ExtendedFormsComponent,
         RegularFormsComponent,
         ValidationFormsComponent,
         FieldErrorDisplayComponent,*/
-        RouterModule.forChild(DonatedRoutes),
+        RouterModule.forChild(ReclamRoutes),
         
         MdModule,
         MaterialModule,
@@ -32,4 +31,5 @@ import { AccueilbenevoleComponent } from './accueilbenevole/accueilbenevole.comp
         TagInputModule,
   ]
 })
-export class DonateModule { }
+export class ReclamModule { }
+

@@ -15,11 +15,11 @@ export class AuthGuardService implements CanActivate{
       return true;
 
     }else if(this.getToken()!== null && localStorage.getItem('role') == 'benevole'){
-      this.router.navigate(['/accueilbenevole']
+      this.router.navigate(['/donate/acceuil']
     );
 
     }else if(this.getToken()!== null && localStorage.getItem('role') == 'beneficeur'){
-      this.router.navigate(['/accueilbeneficeur']);
+      this.router.navigate(['/reclam/accueilb']);
 
     }
     

@@ -12,7 +12,7 @@ export class BenevolGuardService implements CanActivate{
     if(this.getToken()!== null && localStorage.getItem('role') == 'benevole'){
         return true;
     }else if(this.getToken()!== null && localStorage.getItem('role') == 'beneficeur'){
-      this.router.navigate(['/accueilbeneficeur']);
+      this.router.navigate(['/benefeceur/accueilb']);
 
     }else if(this.getToken()!== null && localStorage.getItem('role') == 'admin'){
       this.router.navigate(['/dashboard']);

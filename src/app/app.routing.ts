@@ -1,6 +1,6 @@
 import {  Routes } from '@angular/router';
 import { AccueilbenevoleComponent } from './donate/accueilbenevole/accueilbenevole.component';
-import { AccueilbenificeurComponent } from './dashboard/accueilbenificeur/accueilbenificeur.component';
+import { AccueilbenificeurComponent } from './reclam/accueilbenificeur/accueilbenificeur.component';
 import { DonatemedicalComponent } from './donate/donatemedical/donatemedical.component';
 import { DonatesangComponent } from './donate/donatesang/donatesang.component';
 import { DonationsangComponent } from './donate/donationsang/donationsang.component';
@@ -13,6 +13,7 @@ import { BenefeceurGuardService } from './services/benefeceur-guard.service';
 import { BenevolGuardService } from './services/benevol-guard.service';
 import { LogoutGuardService } from './services/logout-guard.service';
 import { BenevoleComponent } from './layouts/benevole/benevole.component';
+import { BeneficeurComponent } from './layouts/beneficeur/beneficeur.component';
 //import { LogoutGuardService } from './services/logout-guard.service.ts';
 //import { BenevolGuardService } from './services/benevol-guard.service.ts';
 //import { BenefeceurGuardService } from './services/benefeceur-guard.service.ts';
@@ -22,7 +23,12 @@ export const AppRoutes: Routes = [
  
  
 
+    {
+        path:'acceuilb',
+        canActivate:[AuthGuardService],
 
+        component:AccueilbenificeurComponent
+      },
  
 
     {
@@ -31,7 +37,7 @@ export const AppRoutes: Routes = [
       pathMatch: 'full',
     }, {
       path: '',
-     // canActivate:[AuthGuardService],
+      canActivate:[AuthGuardService],
       component: AdminLayoutComponent,
       children: [
           {
@@ -98,7 +104,7 @@ export const AppRoutes: Routes = [
   {
     path: '',
     component: AuthLayoutComponent,
-   // canActivate:[LogoutGuardService],
+    canActivate:[LogoutGuardService],
     children: [{
       path: 'pages',
       loadChildren: './pages/pages.module#PagesModule'
@@ -107,11 +113,20 @@ export const AppRoutes: Routes = [
   ,
   {
     path: '',
-    component: AuthLayoutComponent,
-   // canActivate:[BenevolGuardService],
+    component: BenevoleComponent,
+   canActivate:[BenevolGuardService],
     children: [{
       path: 'donate',
       loadChildren: './donate/donate.module#DonateModule'
+    }]
+  },
+  {
+    path: '',
+    component: BeneficeurComponent,
+   canActivate:[BenefeceurGuardService],
+    children: [{
+      path: 'reclam',
+      loadChildren: './reclam/reclam.module#ReclamModule'
     }]
   }
 ];

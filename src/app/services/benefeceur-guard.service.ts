@@ -11,9 +11,13 @@ export class BenefeceurGuardService implements CanActivate{
     
     if(this.getToken()!== null && localStorage.getItem('role') == 'beneficeur'){
         return true;
-    }else if(this.getToken()!== null && localStorage.getItem('role') == 'benevole'){
-      this.router.navigate(['/accueilbenevole']);
 
+        
+    }else if(this.getToken()!== null && localStorage.getItem('role') == 'benevole'){
+      this.router.navigate(['/benevol/acceuil']);
+
+
+      
     }else if(this.getToken()!== null && localStorage.getItem('role') == 'admin'){
       this.router.navigate(['/dashboard']);
 

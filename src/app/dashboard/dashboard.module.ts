@@ -14,9 +14,6 @@ import { TagInputModule } from 'ngx-chips';
 import { ProfileComponent } from './profile/profile.component';
 
 import { AlerteComponent } from './alerte/alerte.component';
-import { ReclamsangComponent } from './reclamsang/reclamsang.component';
-import { ReclammedicalComponent } from './reclammedical/reclammedical.component';
-import { ReclamescorComponent } from './reclamescor/reclamescor.component';
 
 
 
@@ -46,9 +43,7 @@ import { FieldErrorDisplayComponent } from '../forms/validationforms/field-error
         MaterialModule
     ],
     declarations: [DashboardComponent,ProfileComponent, 
-        EditProfileComponent, AlerteComponent, ReclamsangComponent,
-        
-         ReclammedicalComponent, ReclamescorComponent]
+        EditProfileComponent, AlerteComponent ]
 })
 
 export class DashboardModule {}
