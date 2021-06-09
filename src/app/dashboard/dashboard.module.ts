@@ -8,7 +8,7 @@ import { MaterialModule } from '../app.module';
 import { DashboardComponent } from './dashboard.component';
 import { DashboardRoutes } from './dashboard.routing';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
-//import { WizardComponent } from '../forms/wizard/wizard.component';
+import { WizardComponent } from '../forms/wizard/wizard.component';
 import { NouisliderModule } from 'ng2-nouislider';
 import { TagInputModule } from 'ngx-chips';
 import { ProfileComponent } from './profile/profile.component';
@@ -43,7 +43,7 @@ import { FieldErrorDisplayComponent } from '../forms/validationforms/field-error
         MaterialModule
     ],
     declarations: [DashboardComponent,ProfileComponent, 
-        EditProfileComponent, AlerteComponent ]
+        EditProfileComponent, AlerteComponent ,WizardComponent ]
 })
 
 export class DashboardModule {}

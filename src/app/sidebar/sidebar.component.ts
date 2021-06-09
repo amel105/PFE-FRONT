@@ -58,7 +58,7 @@ export const ROUTES: RouteInfo[] = [{
         ]
     },*/
     {
-        path: '/',
+        path: '/pubsang',
         title: 'Gérer les publications du sang',
         type: 'link',
         icontype: 'favorite',

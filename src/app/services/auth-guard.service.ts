@@ -19,7 +19,7 @@ export class AuthGuardService implements CanActivate{
     );
 
     }else if(this.getToken()!== null && localStorage.getItem('role') == 'beneficeur'){
-      this.router.navigate(['/reclam/accueilb']);
+      this.router.navigate(['/reclam/accueilbenificeur']);
 
     }
     

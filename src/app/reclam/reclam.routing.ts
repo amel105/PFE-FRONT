@@ -11,7 +11,7 @@ export const ReclamRoutes: Routes = [
  
     
     {
-      path:'acceuilb',
+      path:'acceuilbenificeur',
       component:AccueilbenificeurComponent
     },
     {
