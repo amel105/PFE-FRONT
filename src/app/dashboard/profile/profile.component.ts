@@ -24,6 +24,9 @@ export class ProfileComponent implements OnInit {
     let Email = {
       Email :localStorage.getItem('Email')    
     }
+
+
+    
     this.http.post(environment.connection+'getuser' ,Email).subscribe(
       (resultat : any) => {
   

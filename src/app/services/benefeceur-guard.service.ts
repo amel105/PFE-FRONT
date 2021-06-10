@@ -20,8 +20,7 @@ export class BenefeceurGuardService implements CanActivate{
       
     }else if(this.getToken()!== null && localStorage.getItem('role') == 'admin'){
       this.router.navigate(['/dashboard']);
-
-    }
+}
     
     else{
       this.router.navigate(['/pages/login']);
