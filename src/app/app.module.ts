@@ -55,7 +55,6 @@ import { GestionmedicalComponent } from './gestionmedical/gestionmedical.compone
 import { GestionescorteComponent } from './gestionescorte/gestionescorte.component';
 import { BenevoleComponent } from './layouts/benevole/benevole.component';
 import { AccueilbenevoleComponent } from './donate/accueilbenevole/accueilbenevole.component';
-import { AccueilbenificeurComponent } from './reclam/accueilbenificeur/accueilbenificeur.component';
 
 import { BeneficeurComponent } from './layouts/beneficeur/beneficeur.component';
 
@@ -99,7 +98,7 @@ export function HttpLoaderFactory(http:HttpClient){
     MatTooltipModule,
     MatNativeDateModule
   ],
-  declarations: [AccueilComponent, PubsangComponent, PubescorComponent, GestioncompteComponent,  GestionescorteComponent, GestionsangComponent,AccueilbenificeurComponent, AccueilbenevoleComponent, BeneficeurComponent]
+  declarations: [AccueilComponent, PubsangComponent, PubescorComponent, GestioncompteComponent,  GestionescorteComponent, GestionsangComponent, AccueilbenevoleComponent, BeneficeurComponent]
 })
 export class MaterialModule {}
 

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd, NavigationStart } from '@angular/router';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-beneficeur',
@@ -6,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./beneficeur.component.css']
 })
 export class BeneficeurComponent implements OnInit {
+  private _router: Subscription;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }

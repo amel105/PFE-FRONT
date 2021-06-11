@@ -19,7 +19,7 @@ import { ReclamationmedicalComponent } from './reclamationmedical/reclamationmed
 import { ReclamationescorteComponent } from './reclamationescorte/reclamationescorte.component';
 
 @NgModule({
-  declarations: [ReclamescorComponent,ReclammedicalComponent,ReclamsangComponent,AccueilbenificeurComponent,ReclamationsangComponent, ReclamationmedicalComponent, ReclamationescorteComponent],
+  declarations: [ReclamescorComponent,ReclammedicalComponent,ReclamsangComponent,ReclamationsangComponent, ReclamationmedicalComponent, ReclamationescorteComponent],
   imports: [
     CommonModule,
         /*ExtendedFormsComponent,
