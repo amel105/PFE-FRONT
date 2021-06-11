@@ -1,4 +1,29 @@
 
+<nav class="nav nav-pills" style="background-color:#cc0000;">
+    <a class="navbar-brand d-none d-sm-none d-md-block" href="#">  <img src="/assets/img/need.png" width="100 px"> </a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a class="nav-link" routerLinkActive="active" style="color:#ffffff;"href="#"> <i class="material-icons">home</i>&nbsp;&nbsp;Accueil</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a class="nav-link" style="color:#ffffff;" href="#"> <i class="material-icons">
+        supervisor_account</i>&nbsp;&nbsp;Profil</a>
+        <form class="form-inline my-2 my-lg-0">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <a class="nav-link" style="color:#ffffff;" href="#">{{user}}</a>
+     <li class="nav-item">
+      <a href="javascript:void(0)" class="nav-link" ><br>
+        <i class="material-icons">
+          person_off</i>
+          <a class="sidebar-normal" (click)="logout()">Déconnexion</a>
+          <span class="sidebar-normal"></span>
+      </a>
+  </li></form>
+  </nav>
 <div class="main-content">
   <div class="container-fluid">
       <div class="row">
@@ -9,7 +34,7 @@
               <div class="card-icon">
                 <i class="material-icons">bloodtype</i>
               </div>
-          <h4 class="card-title" style="font-weight: bold;">Liste Donneur Sang</h4>
+          <h4 class="card-title" style="font-weight: bold;">Liste Reclmation Sang</h4>
             </div>
            <!--<button class=mat-raised-button class="btn btn-danger" type="submit" width="5">Rechercher</button>--> 
         <!-- <button type="button" class="btn btn-outline-danger">Donner</button>-->   
@@ -17,7 +42,7 @@
             <div class="card-body">
               <div class="card-body">
                 <div class="table-responsive">
-                <button type="button" class="btn btn-outline-danger btn-lg" (click)="onDonate()">Donner</button>
+                <button type="button" class="btn btn-outline-danger btn-lg" (click)="onDonate()">Reclamer</button>
 
                 <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Rechercher..." aria-label="Search">
@@ -32,7 +57,7 @@
                     <th class="text-center">Rôle utilisateur</th> 
                     <th class="text-center">Adresse</th>
                     <th class="text-center">Téléphone</th> 
-                    <th class="text-center">Age</th>             
+                    <th class="text-center">Date Donation</th>             
                     <th class="text-center">Groupe Sang</th>
                     <th class="text-center">Action</th>
                 </tr>
@@ -42,12 +67,6 @@
                 <td class="text-center" style="font-weight: bold;">
                  
                   </td>           
-                            <td class="text-center">
-                             
-                            </td>
-                            <td class="text-center">
-                             
-                            </td>
                             <td class="text-center">
                              
                             </td>
@@ -71,7 +90,7 @@
                           
                             </td>
                             <td class="td-actions text-right">
-                             
+                           
                               <button mat-raised-button type="button" class="btn btn-success">
                                   <i class="material-icons">edit</i>
                               </button>
@@ -92,3 +111,12 @@
                     
    </div></div></div></div></div></div>
        </div>
+<footer>
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color:#cc0000;">
+      
+      <a class="text-white">© 2021 Be Helpful <i class="material-icons">favorite</i> par
+        <a href="https://www.creative-tim.com" target="_blank">Senda Khelil & Amal Mejri</a>pour un meilleur web.</a>
+    </div>
+    <!-- Copyright -->
+    </footer>

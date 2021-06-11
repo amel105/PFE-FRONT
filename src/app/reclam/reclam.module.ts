@@ -12,9 +12,14 @@ import { ReclamRoutes } from './reclam.routing';
 import { ReclamescorComponent } from './reclamescor/reclamescor.component';
 import { ReclammedicalComponent } from './reclammedical/reclammedical.component';
 import { ReclamsangComponent } from './reclamsang/reclamsang.component';
+//import { DonationsangComponent } from './donationsang/donationsang.component';
+//import { DonationmedicalComponent } from './donationmedical/donationmedical.component';
+import { ReclamationsangComponent } from './reclamationsang/reclamationsang.component';
+import { ReclamationmedicalComponent } from './reclamationmedical/reclamationmedical.component';
+import { ReclamationescorteComponent } from './reclamationescorte/reclamationescorte.component';
 
 @NgModule({
-  declarations: [ReclamescorComponent,ReclammedicalComponent,ReclamsangComponent,AccueilbenificeurComponent],
+  declarations: [ReclamescorComponent,ReclammedicalComponent,ReclamsangComponent,AccueilbenificeurComponent,ReclamationsangComponent, ReclamationmedicalComponent, ReclamationescorteComponent],
   imports: [
     CommonModule,
         /*ExtendedFormsComponent,

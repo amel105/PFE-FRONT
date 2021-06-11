@@ -12,10 +12,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NouisliderModule } from 'ng2-nouislider';
 import { TagInputModule } from 'ngx-chips';
 import { AccueilbenevoleComponent } from './accueilbenevole/accueilbenevole.component';
+import { DonationmedicalComponent } from './donationmedical/donationmedical.component';
+import { DonationescorteComponent } from './donationescorte/donationescorte.component';
+import { AlerteComponent } from './alerte/alerte.component';
 
 @NgModule({
   declarations: [DonationsangComponent, 
-    DonatesangComponent, DonatemedicalComponent, DonateescorComponent,AccueilbenevoleComponent],
+    DonatesangComponent, DonatemedicalComponent, DonateescorComponent,AccueilbenevoleComponent, DonationmedicalComponent, DonationescorteComponent, AlerteComponent],
   imports: [
     CommonModule,
         /*ExtendedFormsComponent,

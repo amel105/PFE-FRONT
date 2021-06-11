@@ -1,1 +1,112 @@
-<p>reclamsang works!</p>
+
+<div class="col-md-12">
+    <div class="card ">
+      <div class="card-header card-header-rose card-header-text">
+        <div class="card-text">
+          <h4 class="card-title"> <i class="material-icons">bloodtype</i>Reclamation Sang</h4>
+        </div>
+      </div>
+      <div class="card-body ">
+        <form method="get" action="/" class="form-horizontal">
+          <div class="row">
+            <label class="col-sm-2 col-form-label">Prenom :</label>
+            <div class="col-sm-10">
+              <mat-form-field class="example-full-width">
+                <input matInput type="text">
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <label class="col-sm-2 col-form-label">Nom :</label>
+            <div class="col-sm-10">
+              <mat-form-field class="example-full-width">
+                <input matInput type="text">
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <label class="col-sm-2 col-form-label">Age :</label>
+            <div class="col-sm-10">
+              <mat-form-field class="example-full-width">
+                <input matInput type="number">
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <label class="col-sm-2 col-form-label">Email :</label>
+            <div class="col-sm-10">
+              <mat-form-field class="example-full-width">
+                <input matInput type="email">
+              </mat-form-field>
+            </div>
+          </div>
+         
+
+         
+       
+          <div class="row">
+            <label class="col-sm-2 col-form-label">Groupe Sang</label>
+            <div class="col-sm-10 checkbox-radios">
+              <br>
+              <mat-radio-button value="1">A+</mat-radio-button>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <mat-radio-button value="2">A-</mat-radio-button>
+              <br>
+              <mat-radio-button value="1">B+</mat-radio-button>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <mat-radio-button value="2">B-</mat-radio-button>
+              <br>
+              <mat-radio-button value="1">AB+</mat-radio-button>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <mat-radio-button value="2">AB-</mat-radio-button>
+              <br>
+              <mat-radio-button value="1">O+</mat-radio-button>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <mat-radio-button value="2">O-</mat-radio-button>
+
+            </div>
+          </div>
+          <div class="row">
+            <label class="col-sm-2 col-form-label">Adresse :</label>
+            <div class="col-sm-10">
+              <mat-form-field class="example-full-width">
+                <input matInput type="text">
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <label class="col-sm-2 col-form-label"> :</label>
+            <div class="col-sm-10">
+              <mat-form-field class="example-full-width">
+                <input matInput type="text">
+              </mat-form-field>
+            </div>
+          </div>
+          
+<mat-form-field appearance="fill">
+    <mat-label>role utilisateur</mat-label>
+    <mat-select name ="role" >
+      <mat-option [value]="1" >
+        Benevole
+      </mat-option>
+          <mat-option [value]="2">
+        Bénéficiaire
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <br>
+          <button type="button" class="btn btn-outline-success">Ajouter reclamation</button>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <!--  <button type="button" class="btn btn-outline-warning">Modifier don</button>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+         <!-- <button type="button" class="btn btn-outline-danger">Supprimer reclamation</button>-->
+        
+        </form>
+      </div>
+    </div>
+  </div>
+  

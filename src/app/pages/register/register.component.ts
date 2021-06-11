@@ -26,6 +26,8 @@ export class RegisterComponent implements OnInit, OnDestroy {
       body.classList.remove('register-page');
       body.classList.remove('off-canvas-sidebar');
     }
+
+    
     register(form:NgForm){
       console.log(form);
       let user=form.form.value

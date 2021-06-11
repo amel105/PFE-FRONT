@@ -42,7 +42,6 @@
           </div>
          
 
-         
        
           <div class="row">
             <label class="col-sm-2 col-form-label">Groupe Sang</label>
@@ -59,8 +58,8 @@
               <mat-radio-button value="2">B-</mat-radio-button>
               <br>
               <mat-radio-button value="1">AB+</mat-radio-button>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+              
               <mat-radio-button value="2">AB-</mat-radio-button>
               <br>
               <mat-radio-button value="1">O+</mat-radio-button>
@@ -94,31 +93,19 @@
         Benevole
       </mat-option>
           <mat-option [value]="2">
-        Beneficeur
+        Bénéficiaire
       </mat-option>
     </mat-select>
   </mat-form-field>
   <br>
-          <button type="button" class="btn btn-outline-success">Ajouter don</button>
+          <button type="button" class="btn btn-outline-success" width="50px">Ajouter don</button>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <button type="button" class="btn btn-outline-warning">Modifier don</button>
+        <!---  <button type="button" class="btn btn-outline-warning">Modifier don</button>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <button type="button" class="btn btn-outline-danger">Supprimer don</button>
-        
+        -->
         </form>
       </div>
     </div>
   </div>
-  <footer>
-    <!-- Grid container -->
-  
-    <!-- Grid container -->
-  
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color:#cc0000;">
-      
-      <a class="text-white">© 2021 Be Helpful <i class="material-icons">favorite</i> par
-        <a href="https://www.creative-tim.com" target="_blank">Senda Khelil & Amal Mejri</a>pour un meilleur web.</a>
-    </div>
-    </footer>
-    <!-- Copyright -->
+  <router-outlet></router-outlet>

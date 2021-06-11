@@ -1,1 +1,123 @@
-<p>reclammedical works!</p>
+
+<div class="col-md-12">
+    <div class="card ">
+      <div class="card-header card-header-rose card-header-text">
+        <div class="card-text">
+          <h4 class="card-title"> <i class="material-icons">volunteer_activism</i>Réclamation Medical/Paramedical</h4>
+        </div>
+      </div>
+      <div class="card-body ">
+        <form  class="form-horizontal" #donationMd="ngForm" (ngSubmit)="donatemedical(donationMd)">                        >
+          <div class="row">
+            <label class="col-sm-2 col-form-label"> Prenom :</label>
+            <div class="col-sm-10">
+              <mat-form-field class="example-full-width">
+                <input matInput type="text"  class="form-control" name ="LastName" #Name="ngModel"  ngModel >
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <label class="col-sm-2 col-form-label">Nom :</label>
+            <div class="col-sm-10">
+              <mat-form-field class="example-full-width">
+                <input matInput type="text"  class="form-control" name ="FirstName" #Name="ngModel"  ngModel>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <label class="col-sm-2 col-form-label">Age :</label>
+            <div class="col-sm-10">
+              <mat-form-field  class="form-control" name ="Age" #Age="ngModel"  ngModel >
+                <input matInput type="number">
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <label class="col-sm-2 col-form-label">Email :</label>
+            <div class="col-sm-10">
+              <mat-form-field class="example-full-width">
+                <input matInput type="email" class="form-control"  name ="Email" #Email="ngModel" ngModel >
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <label class="col-sm-2 col-form-label">Telephone :</label>
+            <div class="col-sm-10">
+              <mat-form-field class="example-full-width" >
+                <input matInput type="text" class="form-control" name ="PhoneNumber" #PhoneNumber="ngModel"  ngModel>
+              </mat-form-field>
+            </div>
+          </div>
+        
+          <div class="row">
+            <label class="col-sm-2 col-form-label">Type Materiel :</label>
+            <div class="col-sm-10">
+              <mat-form-field  class="form-control" name ="TypeMateriel" #TypeMateriel="ngModel"  ngModel>
+                <input matInput type="text">
+              </mat-form-field>
+            </div>
+          </div>
+
+              
+          <div class="row">
+            <label class="col-sm-2 col-form-label">Adresse :</label>
+            <div class="col-sm-10">
+              <mat-form-field class="example-full-width">
+                <input matInput type="text"  class="form-control" name ="Adresse" #Adresse="ngModel"  ngModel >
+              </mat-form-field>
+            </div>
+          </div>
+          
+<mat-form-field appearance="fill">
+    <mat-label>role </mat-label>
+    <mat-select name ="role" #role="ngModel" ngModel >
+      <mat-option [value]="1" >
+        Benevole
+      </mat-option>
+          <mat-option [value]="2">
+        Bénéficiaire
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <br>
+          <button type="submit" class="btn btn-outline-success">Ajouter reclamation</button>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+        </form>
+      </div>
+      <!-- <div class="alert alert-success"  *ngIf="success">
+        <button mat-button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <i class="material-icons">close</i>
+        </button>
+        <span>
+          <b> Success : </b> {{message}}</span>
+      </div>
+      <div class="alert alert-danger"  *ngIf="error">
+        <button mat-button type="button" width="10px" class="close" data-dismiss="alert" aria-label="Close">
+          <i class="material-icons">close</i>
+        </button>
+        <span>
+          <b> Erreur : </b>{{message}}</span>
+      </div> -->
+
+
+    </div>
+  </div>
+
+
+
+
+
+  <footer>
+    <!-- Grid container -->
+  
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color:#cc0000;">
+      
+      <a class="text-white">© 2021 Be Helpful <i class="material-icons">favorite</i> par
+        <a href="https://www.creative-tim.com" target="_blank">Senda Khelil & Amal Mejri</a>pour un meilleur web.</a>
+    </div>
+    </footer>
+    <!-- Copyright -->

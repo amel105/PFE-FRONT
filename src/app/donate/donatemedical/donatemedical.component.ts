@@ -14,24 +14,28 @@ export class DonatemedicalComponent implements OnInit {
   succes = false
   error = false
   message = ""
-  donate :string 
+  user :string 
   constructor(
     private http: HttpClient
     ) { 
        //
        
-       this.donate = localStorage.getItem('username')
+       this.user = localStorage.getItem('username')
         //alert(this.user)
       }
 
   ngOnInit(): void {
   }
 
+
+  
+  
+
   donatemedical(form:NgForm){
     console.log(form);
-    let donate=form.form.value
-    console.log(donate);
-     this.http.post(environment.connection+'donationMd',donate).subscribe(
+    let donation_materiel_medical=form.form.value
+    console.log(donation_materiel_medical);
+     this.http.post(environment.connection+'donationMd',donation_materiel_medical).subscribe(
       (data :any)=>{
      this.succes = true
      this.error = false
