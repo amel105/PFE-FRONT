@@ -12,7 +12,7 @@
             <label class="col-sm-2 col-form-label"> Prenom :</label>
             <div class="col-sm-10">
               <mat-form-field class="example-full-width">
-                <input matInput type="text"  class="form-control" name ="LastName" #Name="ngModel"  ngModel >
+                <input matInput type="text"  class="form-control" name ="LastName" #Name="ngModel"  ngModel [ngModelOptions]="{standalone: true}">
               </mat-form-field>
             </div>
           </div>
@@ -20,15 +20,15 @@
             <label class="col-sm-2 col-form-label">Nom :</label>
             <div class="col-sm-10">
               <mat-form-field class="example-full-width">
-                <input matInput type="text"  class="form-control" name ="FirstName" #Name="ngModel"  ngModel>
+                <input matInput type="text"  class="form-control" name ="FirstName" #Name="ngModel"  ngModel [ngModelOptions]="{standalone: true}">
               </mat-form-field>
             </div>
           </div>
           <div class="row">
             <label class="col-sm-2 col-form-label">Age :</label>
             <div class="col-sm-10">
-              <mat-form-field  class="form-control" name ="Age" #Age="ngModel"  ngModel >
-                <input matInput type="number">
+              <mat-form-field class="example-full-width"  >
+                <input matInput type="number" class="form-control" name ="Age" #Age="ngModel"  ngModel [ngModelOptions]="{standalone: true}">
               </mat-form-field>
             </div>
           </div>
@@ -36,15 +36,16 @@
             <label class="col-sm-2 col-form-label">Email :</label>
             <div class="col-sm-10">
               <mat-form-field class="example-full-width">
-                <input matInput type="email" class="form-control"  name ="Email" #Email="ngModel" ngModel >
+                <input matInput type="Email" class="form-control"  name ="Email" #Email="ngModel" ngModel   [ngModelOptions]="{standalone: true}">
               </mat-form-field>
             </div>
           </div>
+
           <div class="row">
             <label class="col-sm-2 col-form-label">Telephone :</label>
             <div class="col-sm-10">
               <mat-form-field class="example-full-width" >
-                <input matInput type="text" class="form-control" name ="PhoneNumber" #PhoneNumber="ngModel"  ngModel>
+                <input matInput type="text" class="form-control" name ="PhoneNumber" #PhoneNumber="ngModel"  ngModel  [ngModelOptions]="{standalone: true}">
               </mat-form-field>
             </div>
           </div>
@@ -52,8 +53,8 @@
           <div class="row">
             <label class="col-sm-2 col-form-label">Type Materiel :</label>
             <div class="col-sm-10">
-              <mat-form-field  class="form-control" name ="TypeMateriel" #TypeMateriel="ngModel"  ngModel>
-                <input matInput type="text">
+              <mat-form-field class="example-full-width"  >
+                <input matInput type="text"   class="form-control"  #TypeMateriel="ngModel"  ngModel   [ngModelOptions]="{standalone: true}">
               </mat-form-field>
             </div>
           </div>
@@ -63,14 +64,14 @@
             <label class="col-sm-2 col-form-label">Adresse :</label>
             <div class="col-sm-10">
               <mat-form-field class="example-full-width">
-                <input matInput type="text"  class="form-control" name ="Adresse" #Adresse="ngModel"  ngModel >
+                <input matInput type="text"  class="form-control" name ="Adresse" #Adresse="ngModel"  ngModel  [ngModelOptions]="{standalone: true}" >
               </mat-form-field>
             </div>
           </div>
           
 <mat-form-field appearance="fill">
     <mat-label>role </mat-label>
-    <mat-select name ="role" #role="ngModel" ngModel >
+    <mat-select name ="role" #role="ngModel" ngModel  [ngModelOptions]="{standalone: true}">
       <mat-option [value]="1" >
         Benevole
       </mat-option>
@@ -86,7 +87,7 @@
         
         </form>
       </div>
-      <!-- <div class="alert alert-success"  *ngIf="success">
+  <div class="alert alert-success"  *ngIf="success">
         <button mat-button type="button" class="close" data-dismiss="alert" aria-label="Close">
           <i class="material-icons">close</i>
         </button>
@@ -96,10 +97,10 @@
       <div class="alert alert-danger"  *ngIf="error">
         <button mat-button type="button" width="10px" class="close" data-dismiss="alert" aria-label="Close">
           <i class="material-icons">close</i>
-        </button>
+        </button >
         <span>
           <b> Erreur : </b>{{message}}</span>
-      </div> -->
+      </div> 
 
 
     </div>

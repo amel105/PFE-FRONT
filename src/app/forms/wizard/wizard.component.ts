@@ -27,26 +27,23 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
 @Component({
     selector: 'app-wizard-cmp',
     templateUrl: 'wizard.component.html',
-  
 })
 
 export class WizardComponent implements OnInit, OnChanges, AfterViewInit {
 
      user :{
-        firstName :String,
-        lastName:String,
-        email:String
-    
+        First_Name :String,
+        Last_Name:String,
+        Email:String,
+        job:String,
+        country:String,
+        Phone_Number:String
 
     }
   cities = [
-    {value: 'paris-0', viewValue: 'Paris'},
-    {value: 'miami-1', viewValue: 'Miami'},
-    {value: 'bucharest-2', viewValue: 'Bucharest'},
-    {value: 'new-york-3', viewValue: 'New York'},
-    {value: 'london-4', viewValue: 'London'},
-    {value: 'barcelona-5', viewValue: 'Barcelona'},
-    {value: 'moscow-6', viewValue: 'Moscow'},
+    {value: 'Privè', viewValue: 'Privè'},
+    {value: 'Etatique', viewValue: 'Etatique'},
+   
   ];
   emailFormControl = new FormControl('', [
     Validators.required,
@@ -58,17 +55,17 @@ export class WizardComponent implements OnInit, OnChanges, AfterViewInit {
   type : FormGroup;
   constructor(private formBuilder: FormBuilder,private http:HttpClient) {
     this.user = {
-        firstName :"",
-        lastName:"",
-        email:"",
-
-        
-
-    
+        First_Name :"",
+        Last_Name:"",
+        Email:"",
+        job:"",
+        country:"",
+        Phone_Number:""
     }
 }
 
-  isFieldValid(form: FormGroup, field: string) {
+
+isFieldValid(form: FormGroup, field: string) {
     return !form.get(field).valid && form.get(field).touched;
   }
 
@@ -89,9 +86,13 @@ export class WizardComponent implements OnInit, OnChanges, AfterViewInit {
            // console.log(resultat);
 
             //this.user.firstName = resultat.firstName;
-            this.user.firstName = resultat.firstName
-            this.user.lastName = resultat.astName
-            this.user.email = resultat.email
+            this.user.First_Name = resultat.First_Name
+            this.user.Last_Name = resultat.Last_Name
+            this.user.Email = resultat.email
+            this.user.job = resultat.job
+            this.user.country = resultat.country
+            this.user.Phone_Number = resultat.Phone_Number
+
 
       
             console.log(this.user);

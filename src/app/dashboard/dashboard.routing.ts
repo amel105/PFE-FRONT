@@ -23,7 +23,7 @@ export const DashboardRoutes: Routes = [
     }
     ,
     {
-      path:'dashboard/edit',
+      path:'/forms/wizard',
       component:WizardComponent
     } 
   ]

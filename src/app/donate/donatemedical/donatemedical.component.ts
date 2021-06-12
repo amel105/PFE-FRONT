@@ -30,12 +30,11 @@ export class DonatemedicalComponent implements OnInit {
 
   
   
-
   donatemedical(form:NgForm){
     console.log(form);
-    let donation_materiel_medical=form.form.value
-    console.log(donation_materiel_medical);
-     this.http.post(environment.connection+'donationMd',donation_materiel_medical).subscribe(
+    let donation=form.form.value
+    console.log(donation);
+     this.http.post(environment.connection+'donationMd',donation).subscribe(
       (data :any)=>{
      this.succes = true
      this.error = false
@@ -59,10 +58,10 @@ export class DonatemedicalComponent implements OnInit {
 
 
   
-  logout(){
-    localStorage.removeItem('token')
-    location.reload();
+//   logout(){
+//     localStorage.removeItem('token')
+//     location.reload();
 
-}
+// }
 
 }
