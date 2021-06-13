@@ -58,7 +58,7 @@ export const ROUTES: RouteInfo[] = [{
         ]
     },*/
     {
-        path: '/pubsang',
+        path: '/gestionsang',
         title: 'Gérer les publications du sang',
         type: 'link',
         icontype: 'favorite',
@@ -93,24 +93,24 @@ export const ROUTES: RouteInfo[] = [{
             {path: 'fullscreen', title: 'Full Screen Map', ab:'FSM'},
             {path: 'vector', title: 'Vector Map', ab:'VM'}
         ]*/
-    },{
+    },/*{
         path: '/calendar',
         title: 'Liste des utilisateurs',
         type: 'link',
         icontype: 'list'
 
-    },{
+    },*/{
         path: '/charts',
         title: 'Liste des utilisateurs',
         type: '',
         icontype: 'timeline'
 
-    },{
+    },/*{
         path: '/accueil',
         title: 'Liste des publications médicals',
         type: 'link',
         icontype: 'list'
-    },{
+    },*//*{
         path: '/pubsang',
         title: 'Liste des publications de sang',
         type: 'link',
@@ -124,7 +124,8 @@ export const ROUTES: RouteInfo[] = [{
             {path: 'lock', title: 'Lock Screen Page', ab:'LSP'},
             {path: 'user', title: 'User Page', ab:'UP'}
         ]*/
-   {
+   
+   /*     {
         path: '/pubescor',
         title: 'Liste des escrotes médicales',
         type: 'link',
@@ -137,8 +138,8 @@ export const ROUTES: RouteInfo[] = [{
             {path: 'register', title: 'Register Page', ab:'RP'},
             {path: 'lock', title: 'Lock Screen Page', ab:'LSP'},
             {path: 'user', title: 'User Page', ab:'UP'}
-        ]*/
-    }
+        ]
+    }*/
 ];
 @Component({
     selector: 'app-sidebar-cmp',

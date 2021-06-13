@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 
 import { AccueilbenificeurComponent } from './accueilbenificeur/accueilbenificeur.component';
+import { AlerteComponent } from './alerte/alerte.component';
 import { ReclamationescorteComponent } from './reclamationescorte/reclamationescorte.component';
 import { ReclamationmedicalComponent } from './reclamationmedical/reclamationmedical.component';
 import { ReclamationsangComponent } from './reclamationsang/reclamationsang.component';
@@ -43,6 +44,10 @@ export const ReclamRoutes: Routes = [
       {
         path:'reclamationEscorte',
         component:ReclamationescorteComponent
+      },
+      {
+        path:'alerte',
+        component:AlerteComponent
       }
     
     ]

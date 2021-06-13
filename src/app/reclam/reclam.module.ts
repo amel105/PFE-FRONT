@@ -17,9 +17,14 @@ import { ReclamsangComponent } from './reclamsang/reclamsang.component';
 import { ReclamationsangComponent } from './reclamationsang/reclamationsang.component';
 import { ReclamationmedicalComponent } from './reclamationmedical/reclamationmedical.component';
 import { ReclamationescorteComponent } from './reclamationescorte/reclamationescorte.component';
+import { AlerteComponent } from './alerte/alerte.component';
+import { ModifSangComponent } from './modif-sang/modif-sang.component';
+import { ModifMedicalComponent } from './modif-medical/modif-medical.component';
+import { ModifEscorteComponent } from './modif-escorte/modif-escorte.component';
+
 
 @NgModule({
-  declarations: [ReclamescorComponent,ReclammedicalComponent,ReclamsangComponent,ReclamationsangComponent, ReclamationmedicalComponent, ReclamationescorteComponent],
+  declarations: [ReclamescorComponent,ReclammedicalComponent,ReclamsangComponent,ReclamationsangComponent, ReclamationmedicalComponent, ReclamationescorteComponent, AlerteComponent, ModifSangComponent, ModifMedicalComponent, ModifEscorteComponent],
   imports: [
     CommonModule,
         /*ExtendedFormsComponent,
