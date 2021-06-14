@@ -17,7 +17,7 @@
             <div class="card-body">
               <div class="card-body">
                 <div class="table-responsive">
-                <button type="button" class="btn btn-outline-danger btn-lg" (click)="onDonate()">Donner</button>
+                <button type="button" routerLink="/donate/donatesang" routerLinkActive="active"  class="btn btn-outline-danger btn-lg" (click)="onDonate()">Donner</button>
 
                 <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Rechercher..." aria-label="Search">
@@ -92,3 +92,4 @@
                     
    </div></div></div></div></div></div>
        </div>
+       <router-outlet></router-outlet>
