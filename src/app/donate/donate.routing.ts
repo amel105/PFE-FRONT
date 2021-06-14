@@ -7,9 +7,6 @@ import { DonationescorteComponent } from './donationescorte/donationescorte.comp
 import { DonationmedicalComponent } from './donationmedical/donationmedical.component';
 import { DonateescorComponent } from './donateescor/donateescor.component';
 import { AlerteComponent } from './alerte/alerte.component';
-import { ModifsangComponent } from './modifsang/modifsang.component';
-import { ModifEscorteComponent } from './modifescorte/modif-escorte.component';
-import { ModifMedicalComponent } from './modifmedical/modif-medical.component';
 
 export const DonatedRoutes: Routes = [
 
@@ -50,20 +47,8 @@ export const DonatedRoutes: Routes = [
     {
       path:'alert',
       component:AlerteComponent
-    },
-    {
-      path:'modifsang',
-      component:ModifsangComponent
-    },
-    {
-      path:'modifescorte',
-      component:ModifEscorteComponent
-    },
-    {
-      path:'modifmedical',
-      component:ModifMedicalComponent
     }
-   
+    
     
 
   ]

@@ -49,6 +49,7 @@ export const ReclamRoutes: Routes = [
         path:'alerte',
         component:AlerteComponent
       }
+     
     
     ]
     }

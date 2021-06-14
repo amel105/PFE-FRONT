@@ -15,14 +15,11 @@ import { AccueilbenevoleComponent } from './accueilbenevole/accueilbenevole.comp
 import { DonationmedicalComponent } from './donationmedical/donationmedical.component';
 import { DonationescorteComponent } from './donationescorte/donationescorte.component';
 import { AlerteComponent } from './alerte/alerte.component';
-import { ModifsangComponent } from './modifsang/modifsang.component';
-import { ModifEscorteComponent } from './modifescorte/modif-escorte.component';
-import { ModifMedicalComponent } from './modifmedical/modif-medical.component';
 
 
 @NgModule({
   declarations: [DonationsangComponent, 
-    DonatesangComponent, DonatemedicalComponent, DonateescorComponent,AccueilbenevoleComponent, DonationmedicalComponent, DonationescorteComponent, AlerteComponent, ModifsangComponent, ModifMedicalComponent, ModifEscorteComponent],
+    DonatesangComponent, DonatemedicalComponent, DonateescorComponent,AccueilbenevoleComponent, DonationmedicalComponent, DonationescorteComponent, AlerteComponent],
   imports: [
     CommonModule,
         /*ExtendedFormsComponent,
