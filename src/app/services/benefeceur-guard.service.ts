@@ -14,7 +14,7 @@ export class BenefeceurGuardService implements CanActivate{
 
         
     }else if(this.getToken()!== null && localStorage.getItem('role') == 'benevole'){
-      this.router.navigate(['/benevol/acceuil']);
+      this.router.navigate(['/reclam/acceuil']);
 
 
       

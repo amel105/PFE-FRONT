@@ -92,9 +92,82 @@
                             </td>
                             <td class="td-actions text-right">
                              
-                              <button mat-raised-button type="button" class="btn btn-success">
-                                  <i class="material-icons">edit</i>
-                              </button>
+                              <a href="" data-toggle="modal" class="btn btn-success" data-target="#orangeModalSubscription"> <i class="material-icons">edit</i>
+                              </a>
+                              <div class="modal fade" id="orangeModalSubscription" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"aria-hidden="true">
+                                <div class="modal-dialog modal-notify modal-warning" role="document">
+                                  <!--Content-->
+                                  <div class="modal-content">
+                                    <!--Header-->
+                                    <div class="modal-header text-center">
+                                      <h4 class="modal-title white-text w-100 font-weight-bold py-2"><i class="material-icons">volunteer_activism</i>Donation Medical/Paramedical</h4>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true" class="white-text">&times;</span>
+                                      </button>
+                                    </div>
+                              
+                                    <!--Body-->
+                                    <div class="modal-body">
+                                      <div class="md-form mb-5">
+                                        <i class="material-icons">face</i>
+                                        <input type="text" id="form3" class="form-control validate">
+                                        <label data-error="wrong" data-success="right" for="form3">Prenom</label>
+                                      </div>
+                                      <div class="md-form mb-5">
+                                        <i class="material-icons">face</i>
+                                        <input type="text" id="form3" class="form-control validate">
+                                        <label data-error="wrong" data-success="right" for="form3">Nom</label>
+                                      </div>
+                                      <div class="md-form mb-5">
+                                        <i class="material-icons">font_download</i>
+                                        <input type="text" id="form3" class="form-control validate">
+                                        <label data-error="wrong" data-success="right" for="form3">Age</label>
+                                      </div>
+                                      <div class="md-form mb-5">
+                                        <i class="material-icons">email</i>
+                                        <input type="text" id="form3" class="form-control validate">
+                                        <label data-error="wrong" data-success="right" for="form3">Email</label>
+                                      </div>
+                                      <div class="md-form mb-5">
+                                        <i class="material-icons">phone</i>
+                                        <input type="text" id="form3" class="form-control validate">
+                                        <label data-error="wrong" data-success="right" for="form3">Telephone</label>
+                                      </div>
+                                      <div class="md-form mb-5">
+                                        <i class="material-icons">medical_services</i>
+                                        <input type="text" id="form3" class="form-control validate">
+                                        <label data-error="wrong" data-success="right" for="form3">Type Materiel</label>
+                                      </div>
+                                      <div class="md-form mb-5">
+                                        <i class="material-icons">place</i>
+                                        <input type="text" id="form3" class="form-control validate">
+                                        <label data-error="wrong" data-success="right" for="form3">Adresse</label>
+                                      </div>
+                                      <i class="material-icons">people_alt</i>
+                                      <mat-form-field appearance="fill">
+                                        <mat-label>role </mat-label>
+                                        <mat-select name ="role" #role="ngModel" ngModel  [ngModelOptions]="{standalone: true}">
+                                          <mat-option [value]="1" >
+                                            Benevole
+                                          </mat-option>
+                                              <mat-option [value]="2">
+                                            Bénéficiaire
+                                          </mat-option>
+                                        </mat-select>
+                                      </mat-form-field>
+                              
+                                      
+                                    </div>
+                              
+                                    <!--Footer-->
+                                    <div class="modal-footer justify-content-center">
+                                      <button type="submit" class="btn btn-outline-success">Valider</button> 
+                                    </div>
+                                  </div>
+                                  <!--/.Content-->
+                                </div>
+                              </div>
+                              
                               <button mat-raised-button type="button" class="btn btn-danger">
                                   <i class="material-icons">close</i>
                               </button>
